@@ -12,7 +12,7 @@ Your README.md file must include:
 
 Your team folder must includes:
 
-(1) Mid and Final slides (pptx only) name as "presentation".  
+(1) Mid and Final slides (pptx only) name as "presentation". If the size is too big to upload, you should upload it as a pdf format. Your demo must be uploaded seperately as a video format.  
 (2) Mid and Final paper (pdf only) name as "paper".   
 (3) Weekly report folrder name as "weeklyreport". If your team name is "BaconBeacon", the file name is K-SW 2022 Fall mmddyyyy BaconBeacon.pdf  
 (4) Code descriptions name as "code" (Must be very detailed. Points will be awarded for elegance, coding style, and a demonstrated understanding of the practical issues. All code should be well-documented, with comments, and the structure of the code should be straightforward.)  
