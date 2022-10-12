@@ -13,7 +13,7 @@ Your README.md file must include:
 Your team folder must includes:
 
 (1) Mid and Final slides (pptx only)  
-(2) Mid and Final paper (PDF only)  
+(2) Mid and Final paper (pdf only)  
 (3) Weekly report. If your team name is "BaconBeacon", the file name is K-SW 2022 Fall mmddyyyy BaconBeacon.pdf  
 (4) Code descriptions (Must be very detailed. Points will be awarded for elegance, coding style, and a demonstrated understanding of the practical issues. All code should be well-documented, with comments, and the structure of the code should be straightforward.)  
 - Describe all the environment setting such as ```what Python version is used? Arduino IDE version? module upgrade? ```
