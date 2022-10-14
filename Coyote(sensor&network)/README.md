@@ -20,6 +20,7 @@ fhelheusk
 ---
 
 (diagram)
+![Project Architecture](https://drive.google.com/file/d/1HT_mn7PpUzPmgZ86eWNqNqwXP_MMPZZk/view?usp=sharing)
 
 ### Environment Settings
 
