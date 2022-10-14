@@ -20,7 +20,7 @@ fhelheusk
 ---
 
 (diagram)
-![Project Architecture](https://drive.google.com/file/d/1HT_mn7PpUzPmgZ86eWNqNqwXP_MMPZZk/view?usp=sharing)
+![Project Architecture](https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program/blob/main/20220922_archi.svg?raw=true)
 
 ### Environment Settings
 
