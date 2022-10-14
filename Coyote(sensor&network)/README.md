@@ -20,7 +20,7 @@ fhelheusk
 ---
 
 (diagram)
-![Project Architecture](https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program/blob/main/20220922_archi.png?raw=true)
+![Project Architecture](https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program/Coyote(sensor&network)/blob/main/20220922_archi.png?raw=true)
 
 ### Environment Settings
 
