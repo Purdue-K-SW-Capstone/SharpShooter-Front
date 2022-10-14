@@ -1,6 +1,7 @@
-### *Team: SharpShooter*
+# *Team: SharpShooter*
+## **Outdoor Long Range Low Latency Shot Tracking System Using LoRa and Computer Vision**
 
-
+### Group Members
 
 | Name             | University                 | Department                                   | Email                 | Contact                          |
 | ------------     | -------------------------  | -------------------------------------------- | --------------------- | -------------------------------- |
@@ -11,3 +12,25 @@
 | Woojin Choi      | Sun Moon University        | Dept. of Computer Science & Engineering      | twinsno119@gmail.com  | https://github.com/woojin-choi518|
 | Ethan O'Sullivan | Purdue University          | Dept. of Computer and Information Technology | ethanext17@gmail.com  | https://github.com/ethanext      |
 | Sophia Kim       | Purdue University          | Dept. of Computer and Information Technology | phia9130@gmail.com    |                                  |
+
+
+### Problem Statement
+
+---
+
+
+
+### Novelty
+
+---
+
+
+
+### Project Overview
+
+---
+
+
+### Environment Settings
+
+---
