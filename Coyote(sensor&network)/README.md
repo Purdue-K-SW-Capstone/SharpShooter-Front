@@ -19,7 +19,6 @@ fhelheusk
 
 ---
 
-(diagram)
 ![20220922_archi](https://user-images.githubusercontent.com/48752329/195937341-eb1eb53c-3ca2-4835-b3e4-9e195ef9af69.png)
 
 ### Environment Settings
