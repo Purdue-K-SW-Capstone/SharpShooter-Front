@@ -1,10 +1,12 @@
-# Team
+# Team: SharpShooter
 
-## SharpShooter
+---
 
 ## Title
 
-## **Outdoor Long Range Low Latency Shot Tracking System Using LoRa and Computer Vision**
+Outdoor Long Range Low Latency Shot Tracking System Using LoRa and Computer Vision
+
+---
 
 ### Group Members
 
