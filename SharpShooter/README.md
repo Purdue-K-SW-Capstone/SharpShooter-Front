@@ -36,7 +36,7 @@ This program presents a new approach to the projectile mark detecting system. Th
 
 ## Project Overview
 
-<img align="center" width="500" alt="도식화" src="https://user-images.githubusercontent.com/77319785/196273713-43df42f2-068c-4285-ab9c-fec79f087b1b.png">
+<img align="center" width="800" alt="도식화" src="https://user-images.githubusercontent.com/77319785/196273713-43df42f2-068c-4285-ab9c-fec79f087b1b.png">
 
 ---
 
