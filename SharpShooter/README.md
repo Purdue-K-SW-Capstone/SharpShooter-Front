@@ -34,7 +34,7 @@
 
 | Division        | Stack                                                                                                                                                                                                       |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Client          | <img src="https://img.shields.io/badge/React-blue?style=social&logo=React&logoColor=61DAFB"/>                                                                                                               |
+| Client          | <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=React&logoColor=61DAFB"/>                                                                                                        |
 | Server          | <img src="https://img.shields.io/badge/NodeJs-blue?style=social&logo=#339933&logoColor=white"/>                                                                                                             |
 | Code Management | <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=black"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">     |
 | Formatting      | <img src="https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black"> <img src="https://img.shields.io/badge/EsLint-Black?style=social&logo=#4B32C3&logoColor=white"/> |
