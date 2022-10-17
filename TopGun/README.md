@@ -4,6 +4,7 @@ Team Name: TopGun
 
 Group Members: 
   Heejun Park, Yonsei University
+  
   Taeyun Kim, Jeju Nat’l University
   Hanbi Kim, Chungbuk Nat’l University
   Seokhyun Heo, Jeju Nat’l University
