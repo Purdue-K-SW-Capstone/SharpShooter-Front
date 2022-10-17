@@ -8,8 +8,8 @@ Navigation Algorithm & Service that guides you to avoid dangerous area
 ## Team ChasingFox
 
 | ![](https://github.com/chersiakingdom.png) | ![](https://github.com/21700340JuwonBaek.png) | ![](https://github.com/zihooy.png) | ![](https://github.com/YesHyeon.png) | ![](https://github.com/heewoneha.png) |
-| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :-----------------------------------: | :------------------------------------: | :------------------------------------: |
-|             **Daye Kim/AI**              |             **Juwon Baek/AI**              |             **Jihu Yang/Back-end**              |            **Roh Hyun/Front-end**            |            **Heewon Jung/Data**             |           **Bryanna/Overall**             | 
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :-----------------------------------: | :------------------------------------: |
+|             **Daye Kim/AI**              |             **Juwon Baek/AI**              |             **Jihu Yang/Back-end**              |            **Roh Hyun/Front-end**            |            **Heewon Jung/Data**             |
 
 ## Tech Stack
 
