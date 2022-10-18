@@ -26,7 +26,7 @@
 + **System Overview**
   <p align="center">
    <img src="C.C/ABCbot.inside.svg" alt="Robot Architecture"/>
-  </p>
+ </p>
 
 + **Environment Setting**
     
