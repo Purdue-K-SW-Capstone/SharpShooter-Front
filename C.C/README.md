@@ -25,7 +25,7 @@
 
 + **System Overview**
   <p align="center">
-   <img src="C.C/ABCbot.inside.svg" alt="Robot Architecture"/>
+   <img src="KSW_2022_Fall_Program/C.C/ABCbot.inside.svg" alt="Robot Architecture"/>
  </p>
 
 + **Environment Setting**
