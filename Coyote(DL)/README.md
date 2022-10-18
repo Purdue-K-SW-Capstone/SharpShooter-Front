@@ -5,8 +5,8 @@
 ## Contents
 1. [Team](#team)
 2. [Overview ](#overview)
-3. [Research problem statements](#research_problem_statements)
-4. [Research novelty](#research_novelty)
+3. [Research problem statements](#research-problem-statements)
+4. [Research novelty](#research-novelty)
 6. [Requirements](#requirements)
 8. [Technology Stack](#technology-stack)
 9. [Deep Learning](#deeplearning-model)
