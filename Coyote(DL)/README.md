@@ -3,18 +3,18 @@
 # Team Coyote2 : Deep Learning
 
 ## Contents
-1. [Team](#Team)
-2. [Overview ](#Overview )
-3. [Research problem statements](#Research_problem_statements)
-4. [Research novelty](#Research_novelty)
-6. [Requirements](#Requirements)
-8. [Technology Stack](#Technology_Stack)
-9. [Deep Learning](#DeepLearning-Model)
-    - [dataset](#Custom_dataset)
-    - [Model & Hyper Parameters](#Model_&_Hyper_Parameters)
-    - [Experiment](#Experiment)
-    - [Training](#Training)
-    - [Result](#Result)    
+1. [Team](#team)
+2. [Overview ](#overview)
+3. [Research problem statements](#research_problem_statements)
+4. [Research novelty](#research_novelty)
+6. [Requirements](#requirements)
+8. [Technology Stack](#technology-stack)
+9. [Deep Learning](#deeplearning-model)
+    - [dataset](#custom-dataset)
+    - [Model & Hyper Parameters](#model-&-hyper-parameters)
+    - [Experiment](#experiment)
+    - [Training](#training)
+    - [Result](#result)    
 
 # Team
 
@@ -39,11 +39,8 @@
 
 
 # Overview 
-
-```
 <img width="866" alt="overview of coyote2" src="https://user-images.githubusercontent.com/51157811/196322339-95cadce6-5926-4d39-9579-ad5968d65c27.PNG">
 
-```
 
 # Research problem statements 
 
