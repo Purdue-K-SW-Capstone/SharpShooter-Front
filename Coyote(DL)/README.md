@@ -5,12 +5,11 @@
 ## Contents
 1. [Team](#Team)
 2. [Overview ](#Overview )
-3. [Research problem statements](#Research problem statements)
-4. [Research novelty](#Research novelty)
-5. [Install](#Install)
+3. [Research problem statements](#Research_problem_statements)
+4. [Research novelty](#Research_novelty)
 6. [Requirements](#Requirements)
-7. [Technology Stack](#Technology_Stack)
-8. [Deep Learning](#DeepLearning-Model)
+8. [Technology Stack](#Technology_Stack)
+9. [Deep Learning](#DeepLearning-Model)
     - [dataset](#Custom_dataset)
     - [Model & Hyper Parameters](#Model_&_Hyper_Parameters)
     - [Experiment](#Experiment)
@@ -41,9 +40,10 @@
 
 # Overview 
 
-![overview of coyote2](C:\Users\yejin\KSW_2022_Fall_Program\Coyote(DL)\overview of coyote2.PNG)
+```
+<img width="866" alt="overview of coyote2" src="https://user-images.githubusercontent.com/51157811/196322339-95cadce6-5926-4d39-9579-ad5968d65c27.PNG">
 
-
+```
 
 # Research problem statements 
 
@@ -58,12 +58,12 @@ The method of coyote howling sound classification using Convolutional Neural Net
 
 
 # Requirements
-## version
+### version
 `Python 3.7 ~ 3.9`
 
 `CUDA Version 11.2`
 
-## Configuration
+### Configuration
 
 ```python
 conda install -c conda-forge pyngrok  
@@ -73,14 +73,14 @@ conda install -c conda-forge pyngrok
 
 # Technology Stack
 
-   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+# <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
 
 
 
 # Deep Learning
 
-### Dataset
-### Model & Hyper Parameter
-### Experiment
-### Training
-### Result
+## Dataset
+## Model & Hyper Parameter
+## Experiment
+## Training
+## Result
