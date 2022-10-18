@@ -9,8 +9,8 @@
 4. [Research novelty](#research-novelty)
 6. [Requirements](#requirements)
 8. [Technology Stack](#technology-stack)
-9. [Deep Learning](#deeplearning-model)
-    - [dataset](#custom-dataset)
+9. [Deep Learning](#deep-learning)
+    - [dataset](#dataset)
     - [Model & Hyper Parameters](#model-&-hyper-parameters)
     - [Experiment](#experiment)
     - [Training](#training)
@@ -75,7 +75,6 @@ conda install -c conda-forge pyngrok
 
 
 # Deep Learning
-
 ## Dataset
 ## Model & Hyper Parameter
 ## Experiment
