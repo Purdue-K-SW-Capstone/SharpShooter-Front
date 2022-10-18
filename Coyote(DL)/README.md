@@ -40,8 +40,7 @@
 
 
 # Overview 
-
-![overview of coyote2](C:\Users\yejin\KSW_2022_Fall_Program\Coyote(DL)\overview of coyote2.PNG)
+<img width="866" alt="overview of coyote2" src="https://user-images.githubusercontent.com/51157811/196322339-95cadce6-5926-4d39-9579-ad5968d65c27.PNG">
 
 
 
