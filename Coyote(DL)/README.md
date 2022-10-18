@@ -5,8 +5,14 @@
 ## Contents
 1. [Team](#Team)
 2. [Overview ](#Overview )
+<<<<<<< HEAD
 3. [Research problem statements](#Research_problem_statements)
 4. [Research novelty](#Research_novelty)
+=======
+3. [Research problem statements](#Research problem statements )
+4. [Research novelty](#Research novelty)
+5. [Install](#Install)
+>>>>>>> bbc2168f214973c10209829037c84e6f528b6825
 6. [Requirements](#Requirements)
 8. [Technology Stack](#Technology_Stack)
 9. [Deep Learning](#DeepLearning-Model)
@@ -39,20 +45,23 @@
 
 
 # Overview 
+<<<<<<< HEAD
 
 ```
 <img width="866" alt="overview of coyote2" src="https://user-images.githubusercontent.com/51157811/196322339-95cadce6-5926-4d39-9579-ad5968d65c27.PNG">
+=======
+<img width="866" alt="overview of coyote2" src="https://user-images.githubusercontent.com/51157811/196322339-95cadce6-5926-4d39-9579-ad5968d65c27.PNG">
+
+>>>>>>> bbc2168f214973c10209829037c84e6f528b6825
 
 ```
 
 # Research problem statements 
-
 The attacks on livestock, human, and crops by coyotes are occurring over the United States, while traditional simple management such as public education about the method of avoiding coyotes and coyote hunting contests to reduce their numbers are executed. There are not sufficient cases of technical approaches or research about the damage to coyotes. 
 
 
 
 # Research novelty 
-
 The method of coyote howling sound classification using Convolutional Neural Network (CNN) to reduce the damage of coyotes is needed. This paper suggests using a network connection in order to prevent the damage by informing the neighborhood farms when coyotes appear and chasing coyotes through a coyote alert system. It is expected that additional technical approach to current coyote damage prevention can improve the accuracy and make the previous management more practical.
 
 
