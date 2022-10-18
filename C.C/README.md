@@ -1,4 +1,38 @@
- *Collaborator*
+### KSW_2022_Fall_Program
+
+# 🤖 2022 Purdue Beach Cleaning Robot by TEAM C.C
+
++ **Project Title**
+     
+
++ **Problem Statement**
+    
+
+
++ **Novelty**
+
+    1. 
+       
+      
+    2. 
+        
+
+
++ **System Overview**
+ 
+
++ **Environment Setting**
+    
+    ✔️Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
+    
+    ✔️Python version 3.8.10 
+    
+    ✔Raspberry Pi 4 Model B+ (8GB)
+    
+    ✔️ROS 2 foxy
+  
+
++ **Collaborator**
      
        Eunmin Kim
        - Dankook Univeristy
@@ -20,13 +54,13 @@
        
        Hanbyeol Lee
        - Chung-Ang University
-       - Majoring in Computer Software Engineering
+       - Majoring in Computer Science and Engineering
        - yhb1834@cau.ac.kr
        - https://github.com/yhb1834
     
        Jeeyoung Oh
        - Chung-ang University
-       - Majoring in Computer Software Engineering
+       - Majoring in Computer Science and Engineering
        - jeeyoung9907@cau.ac.kr
        - https://github.com/ohjeeyoung
     
