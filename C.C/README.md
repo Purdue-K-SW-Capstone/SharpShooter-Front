@@ -23,13 +23,13 @@
 
 + **Environment Setting**
     
-    ✔️Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)
+    ```Raspberry Pi OS : Ubuntu Server 20.04.5 LTS (64-bit)```
     
-    ✔️Python version 3.8.10 
+    ```Python version 3.8.10```
     
-    ✔Raspberry Pi 4 Model B+ (8GB)
+    ```Raspberry Pi 4 Model B+ (8GB)```
     
-    ✔️ROS 2 foxy
+    ```ROS 2 foxy```
   
 
 + **Collaborator**
