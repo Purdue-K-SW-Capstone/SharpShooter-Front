@@ -9,9 +9,8 @@
 4. [Research novelty](#Research novelty)
 5. [Install](#Install)
 6. [Requirements](#Requirements)
-7. [Configuration](#Configuration)
-8. [Technology Stack](#Technology_Stack)
-9. [Deep Learning](#DeepLearning-Model)
+7. [Technology Stack](#Technology_Stack)
+8. [Deep Learning](#DeepLearning-Model)
     - [dataset](#Custom_dataset)
     - [Model & Hyper Parameters](#Model_&_Hyper_Parameters)
     - [Experiment](#Experiment)
@@ -42,7 +41,7 @@
 
 # Overview 
 
-![overview](C:\Users\yejin\Desktop\overview.PNG)
+![overview of coyote2](C:\Users\yejin\KSW_2022_Fall_Program\Coyote(DL)\overview of coyote2.PNG)
 
 
 
@@ -74,14 +73,14 @@ conda install -c conda-forge pyngrok
 
 # Technology Stack
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/><img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=Flask&logoColor=white"/><img src="https://img.shields.io/badge/socket.io-010101?style=flat-square&logo=socket.io&logoColor=white"/><img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=Bootstrap&logoColor=white"/><img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=WebRTC&logoColor=white"/><img src="https://img.shields.io/badge/ngrok-1F1E37?style=flat-square&logo=ngrok&logoColor=white"/><img src="https://img.shields.io/badge/nvidia-76B900?style=flat-square&logo=nvidia&logoColor=white"/><img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white"/>
+   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
 
 
 
 # Deep Learning
 
-## Dataset
-## Model & Hyper Parameter
-## Experiment
-## Training
-## Result
+### Dataset
+### Model & Hyper Parameter
+### Experiment
+### Training
+### Result
