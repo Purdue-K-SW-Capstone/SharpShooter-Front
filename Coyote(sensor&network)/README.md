@@ -7,7 +7,7 @@
 
 ---
 
-djfksehfklsjeksje
+In United States, cases of human injuries, loss of pets and livestocks caused by wild coyotes are reported every year. Since wild coyotes usually inhabit in rural area, pets and livestocks in those places are more vulnerable to coyote attacks. However, there are few specialized solution or devices created to solve this problem.
 
 ### Novelty
 
