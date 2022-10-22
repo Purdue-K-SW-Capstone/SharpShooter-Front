@@ -33,7 +33,7 @@ Heltec ESP32 WiFi LoRa 32 (V2)
 
 Arduino IDE
 
-- version: 2.0.0
+- version: 2.0.0 (available on Windows)
 
 - Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
 
