@@ -27,34 +27,34 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 ---
 
 ### Sensors
-- Heltec ESP32 WiFi LoRa 32 (V2)
+Heltec ESP32 WiFi LoRa 32 (V2)
 
-ESP32 (dual-core 32-bit MCU + ULP cor) with LoRa node chip SX1276/SX1278
+- ESP32 (dual-core 32-bit MCU + ULP cor) with LoRa node chip SX1276/SX1278
 
-- Arduino IDE
+Arduino IDE
 
-version: 2.0.0
+- version: 2.0.0
 
-Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
+- Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
 
-board manager for Heltec ESP32 WiFi LoRa 32 (V2) : https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.6/package_heltec_esp32_index.json 
+- board manager for Heltec ESP32 WiFi LoRa 32 (V2) : https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.6/package_heltec_esp32_index.json 
 
-end device - server communication guide: https://www.aeq-web.com/lorawan-ttn-mit-heltec-esp32-lora-board-abp-mode/?lang=en
+- end device - server communication guide: https://www.aeq-web.com/lorawan-ttn-mit-heltec-esp32-lora-board-abp-mode/?lang=en
 
-library used for communication between end device and tts(the things stack): https://github.com/mcci-catena/arduino-lmic
+- library used for communication between end device and tts(the things stack): https://github.com/mcci-catena/arduino-lmic
 
-FFT on ESP32 guide: https://medium.com/swlh/how-to-perform-fft-onboard-esp32-and-get-both-frequency-and-amplitude-45ec5712d7da
+- FFT on ESP32 guide: https://medium.com/swlh/how-to-perform-fft-onboard-esp32-and-get-both-frequency-and-amplitude-45ec5712d7da
 
-- MAX4466 Electret Microphone Amplifier
+MAX4466 Electret Microphone Amplifier
 
-Datasheet: https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf
+- Datasheet: https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf
 
 ### Gateway
-- RAK7249 WisGate Edge Max from RAKwireless
+RAK7249 WisGate Edge Max from RAKwireless
 
-User Manual: https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Quickstart/
+- User Manual: https://docs.rakwireless.com/Product-Categories/WisGate/RAK7249/Quickstart/
 
-Configuration Setting to Connect to the TTS(the things stack) server: https://www.thethingsnetwork.org/forum/t/setting-up-basic-station-protocol-on-rak7240-and-rak7249-industrial-gateways/37011/11
+- Configuration Setting to Connect to the TTS(the things stack) server: https://www.thethingsnetwork.org/forum/t/setting-up-basic-station-protocol-on-rak7240-and-rak7249-industrial-gateways/37011/11
 
 ### Network
 
