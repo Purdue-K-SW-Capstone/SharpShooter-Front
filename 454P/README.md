@@ -33,6 +33,7 @@ Also, this research covers details about how to build a local network for hackin
  <img width="700" alt="LocalLoRaWAN" align="center" src="https://user-images.githubusercontent.com/31115765/197547495-1a1319bb-7026-472f-a643-208f0badc29b.png">
  <p align="center"><b>Fig. 1. Set up of local LoRaWAN</b></p>
 </p>
+
 - The whole network consists of gateway, gateway bridge, network server, application server, and two Database servers.
 - Using Raspberry Pi as a network server and an application server. RAK7249 as a gateway
 - Local LoRaWAN was a mandatory because this project aims to hack a LoRaWAN, which might cause legal problems, which might cause a problem once hacking is operated in Layer 2 or higher layers.
@@ -44,12 +45,14 @@ Also, this research covers details about how to build a local network for hackin
  <img width="500" alt="SDR" src="https://user-images.githubusercontent.com/31115765/197550817-6f1a3aad-2a3a-4c2f-9a3a-db97c081b983.jpg">
  <p align="center"><b>Fig. 2. Result of jamming using SDR on spectrum analyzer</b></p>
 </p>
+
 - Jamming was conducted by Software Defined Radio(SDR). HackRF one and USRP B200 were used as SDR.
 - dBm of SDR was not as much powerful as signals sent by a node device. It can not conduct jamming successfully.
 
 #### Jamming using Motorola canopy
 
 <p align="center"><b>Fig. 3. Result of jamming using motorola canopy on spectrum analyzer</b></p>
+
 - Canopy has two types which are Access Point(AP) and subscriber. It can be connected with external antennas. Subscriber sent tremendous packets to AP.
 - The analyzer proved that there was a noise like a waterfall which can offset all signals near 900MHz.
 - Additionally, all join requests from node devices in range of 902.8 to 914Hz could not reach to the gateway as a join request did not show up on Chirpstack interface of the application server and network server. This points to Jamming comes to fruition. Since commercial LoRaWAN has more channels, jamming more channels can be done by using more canopy at once, or jamming different frequency of LoRaWAN in multiple region using under type of canopy.
@@ -58,7 +61,8 @@ Also, this research covers details about how to build a local network for hackin
 <p align="center">
  <img width="700" alt="Packet Sniffing" align="center" src="https://user-images.githubusercontent.com/31115765/197548745-109bf95f-d98b-4ee1-aca6-9340af62f505.png">
  <p align="center"><b>Fig. 4. Result of packet sniffing using gnu-radio and SDR</b></p>
-</p
+</p>
+
 - Using GNU radio and HackRF, LoRaWAN packets which are sent by node devices were sniffed by HackRF one. Packets were shown on the laptop which was connected to HackRF.
 - When a join request of LoRaWAN is sent, packets are not encrypted. Therefore Packet sniffing of LoRaWAN is successfully conducted using gr-lora and LoRa_Craft.
 
