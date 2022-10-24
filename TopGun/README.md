@@ -31,3 +31,12 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
     1. Develop a Hybrid Machine Learning (HML) model that combines ML and DL models.
     2. Predict apple sweetness(Brix level) from apple images taken by a smartphone.
 
+## Environment Setting
+### Machine Learning
+
+### Deep Learning
+    - Python 3.7.15 
+    - tensorflow 2.9.2
+    - keras 2.9.0
+    - VGG16
+    - EfficientNetB0
