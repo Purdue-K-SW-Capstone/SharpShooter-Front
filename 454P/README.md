@@ -23,7 +23,7 @@ Nonce is an arbitrary number that can be used just once in a cryptographic commu
 
 This research aims to demonstrate vulnerabilities of LoRaWAN security under an experiment environment similar to the real-world specification.
 
-LoRaWAN network use multichannel radio frequency for communication, to jam LoRaWAN in the real-world specification, all of the channels should be jammed at once. As previous studies did not provide detailed information about jamming multiple channels at once or used single channels. Thus, this research fills the gap by jamming in multichannel using LoRa versions used in real-world environments with achievable equipment with details.
+LoRaWAN network uses multichannel radio frequency for communication, to jam LoRaWAN in the real-world specification, all of the channels should be jammed at once. As previous studies did not provide detailed information about jamming multiple channels at once or used single channels. Thus, this research fills the gap by jamming in multichannel using LoRa versions used in real-world environments with achievable equipment with details.
 
 Also, this research covers details about how to build a local network for hacking LoRaWAN. By describing the specifications about local LoRaWAN, this research provides a flexible environment where multiple hacking methods are able to be attempted with few constraints.
 
