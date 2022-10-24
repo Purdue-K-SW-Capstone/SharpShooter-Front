@@ -20,7 +20,6 @@ Nonce is an arbitrary number that can be used just once in a cryptographic commu
 6. LoRa class B attack: accelerating battery exhaustion by increasing the power consumption of the sensor.
 
 ## 💡 Novelty
-
 This research aims to demonstrate vulnerabilities of LoRaWAN security under an experiment environment similar to the real-world specification.
 
 LoRaWAN network uses multichannel radio frequency for communication, to jam LoRaWAN in the real-world specification, all of the channels should be jammed at once. As previous studies did not provide detailed information about jamming multiple channels at once or used single channels. Thus, this research fills the gap by jamming in multichannel using LoRa versions used in real-world environments with achievable equipment with details.
@@ -30,7 +29,7 @@ Also, this research covers details about how to build a local network for hackin
 ## ⚙ Progress
 
 ### Building Local LoRaWAN
-
+<img width="500" alt="LocalLoRaWAN" align="center" src="https://user-images.githubusercontent.com/31115765/197547495-1a1319bb-7026-472f-a643-208f0badc29b.png">
 - The whole network consists of gateway, gateway bridge, network server, application server, and two Database servers.
 - Using Raspberry Pi as a network server and an application server. RAK7249 as a gateway
 - Local LoRaWAN was a mandatory because this project aims to hack a LoRaWAN, which might cause legal problems, which might cause a problem once hacking is operated in Layer 2 or higher layers.
@@ -38,6 +37,7 @@ Also, this research covers details about how to build a local network for hackin
 ### Jamming
 
 #### Jamming using SDR
+<img width="500" alt="SDR" align="center" src="https://user-images.githubusercontent.com/31115765/197550817-6f1a3aad-2a3a-4c2f-9a3a-db97c081b983.jpg">
 
 - Jamming was conducted by Software Defined Radio(SDR). HackRF one and USRP B200 were used as SDR.
 - dBm of SDR was not as much powerful as signals sent by a node device. It can not conduct jamming successfully.
@@ -48,21 +48,19 @@ Also, this research covers details about how to build a local network for hackin
 - The analyzer proved that there was a noise like a waterfall which can offset all signals near 900MHz.
 - Additionally, all join requests from node devices in range of 902.8 to 914Hz could not reach to the gateway as a join request did not show up on Chirpstack interface of the application server and network server. This points to Jamming comes to fruition. Since commercial LoRaWAN has more channels, jamming more channels can be done by using more canopy at once, or jamming different frequency of LoRaWAN in multiple region using under type of canopy.
 
-#### Packet Sniffing
-
+### Packet Sniffing
+<img width="500" alt="Packet Sniffing" align="center" src="https://user-images.githubusercontent.com/31115765/197548745-109bf95f-d98b-4ee1-aca6-9340af62f505.png">
 - Using GNU radio and HackRF, LoRaWAN packets which are sent by node devices were sniffed by HackRF one. Packets were shown on the laptop which was connected to HackRF.
 - When a join request of LoRaWAN is sent, packets are not encrypted. Therefore Packet sniffing of LoRaWAN is successfully conducted using gr-lora and LoRa_Craft.
 
 ## 🌎 Environment
 ### LoRaWAN
-On Raspberry Pi OS
-([https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-09-26/](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-09-26/))
+On [Raspberry Pi OS](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-09-26/)
 
 Using Chirpstack v3
-- Chirpstack v3 gateway bridge@Latest
-([https://www.chirpstack.io/gateway-bridge/install/debian/](https://www.chirpstack.io/gateway-bridge/install/debian/))
+- [Chirpstack v3 gateway bridge@Latest](https://www.chirpstack.io/gateway-bridge/install/debian/)
     - Mosquitto @Latest
-- Chirpstack v3 Network Server@Latest ([https://www.chirpstack.io/network-server/](https://www.chirpstack.io/network-server/)) & Chirpstack v3 Application Server@Latest ([https://www.chirpstack.io/application-server/](https://www.chirpstack.io/application-server/))
+- [Chirpstack v3 Network Server@Latest] https://www.chirpstack.io/network-server/) & [Chirpstack v3 Application Server@Latest] (https://www.chirpstack.io/application-server/)
     - Mosquitto @Latest
     - Redis 5.0.
     - Postgresql 9.5.
@@ -70,21 +68,19 @@ Using Chirpstack v3
 ### Gnu Radio & LoRa Packet UDP Reader
 On Ubuntu 20.04
 
-- LoRa_Craft
-([https://github.com/PentHertz/LoRa_Craft](https://github.com/PentHertz/LoRa_Craft))
+- [LoRa_Craft](https://github.com/PentHertz/LoRa_Craft)
     - Python 2.7
         - Scapy
     - Gnu Radio 3.8
-    - gr-LoRa 0.6.2
-    ([https://github.com/rpp0/gr-lora](https://github.com/rpp0/gr-lora))
-        - `python2-numpy`, `python2-scipy`, `swig`, `cppunit`, `fftw`, `gnuradio`, `libvolk`, `log4cpp`, `cmake`, `wx,
-        liquid-dsp([https://github.com/jgaeddert/liquid-dsp](https://github.com/jgaeddert/liquid-dsp))`
+    - [gr-LoRa 0.6.2](https://github.com/rpp0/gr-lora)
+        - `python2-numpy`, `python2-scipy`, `swig`, `cppunit`, `fftw`, `gnuradio`, `libvolk`, `log4cpp`, `cmake`, `wx`,
+        and [liquid-dsp](https://github.com/jgaeddert/liquid-dsp)
 - Gnu Radio 3.9
-    - gr-osmosdr([https://github.com/osmocom/gr-osmosdr](https://github.com/osmocom/gr-osmosdr))
-    - hackrf@latest
-    - ettus uhd driver(`[https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux](https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux))`
+    - [gr-osmosdr](https://github.com/osmocom/gr-osmosdr)
+    - [hackrf@latest](https://github.com/greatscottgadgets/hackrf)
+    - [ettus uhd driver](https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux)
 
-- Golang 1.13
+- [Golang 1.13](https://go.dev/)
 
 ## 👼 Collaborator
 
@@ -100,7 +96,7 @@ On Ubuntu 20.04
        - romj98@cau.ac.kr
        - https://github.com/ori5r2
       
-       🚽 Junyoung Jang
+       🦂 Junyoung Jang
        - Chungang University
        - School of Computer Science and Engineering
        - junjang99@cau.ac.kr
