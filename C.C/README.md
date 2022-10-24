@@ -88,6 +88,8 @@
     - Raspberry Pi 4 Model B+ (8GB)
     
     - ROS 2 foxy
+    
+    - YOLO v5
   
 
 #### 🌊 Collaborator
