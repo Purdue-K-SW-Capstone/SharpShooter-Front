@@ -4,7 +4,7 @@
 
 📑 *Project Title*
         
-    Deep Learning-based Drone Control using Hand Tracking and Computer Vision
+    Using deep learning vision technology to control drone dynamic motions
 
 📅 *Project Period*
 
