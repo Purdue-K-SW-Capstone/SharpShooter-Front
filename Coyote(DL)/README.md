@@ -13,7 +13,6 @@
     - [dataset](#dataset)
     - [Model & Hyper Parameters](#model-&-hyper-parameters)
     - [Experiment](#experiment)
-    - [Training](#training)
     - [Result](#result)    
 
 # Team
@@ -26,15 +25,6 @@
 | BoKyung Kwon | Kwangwoon University     | Dept. of Computer Information                | bbo1209@naver.com   | https://github.com/doomdabo    |
 | Jihyun Park  | Jeju National University | Dept. of Computer Science & Statistics       | mmmszip@gmail.com   | https://github.com/mmmtobezip  |
 | Griffin Pegg | Purdue University        | Dept. of Computer and Information Technology | pegge@purdue.edu    | https://github.com/coyotehowls |
-
-
-#### Coach
-
-| Name        | Department         |
-| :---------: | :-----------------: |
-| Eric Matson | Purdue University (Prof.) |
-| Tony Smith | Purdue University (Prof.) |
-| Minji Lee | Purdue University (Ph.D.) |
 
 
 
@@ -58,7 +48,9 @@ The method of coyote howling sound classification using Convolutional Neural Net
 ### version
 `Python 3.7 ~ 3.9`
 
-`CUDA Version 11.2`
+`Colab` 
+
+`Librosa`
 
 ### Configuration
 
@@ -76,7 +68,31 @@ conda install -c conda-forge pyngrok
 
 # Deep Learning
 ## Dataset
+There are a total of 1,160 training dataset. It consisted of 586 coyotes, 480 dogs, and 94 chickens. And the test data set is a total of 280 sheets. It consisted of 134 coyotes, 117 dogs, and 29 chickens.
+Training data and test data were divided in a total ratio of 8:2.
+
 ## Model & Hyper Parameter
+
+The experimental setting is as follows: 
+
+- Optimization function : Adam optimizer
+- Learning rate : 0.001, the 
+- Batch size : 10, and the
+- Epoch : 100. 
+- Sampling rate : 16,000 (MFCC)
+
 ## Experiment
-## Training
-## Result
+
+![confusion_mat](C:\Users\yejin\Desktop\confusion_mat.png)
+
+Confusion Matrix 
+
+![roc](C:\Users\yejin\Desktop\roc.png)
+
+ROC curve
+
+
+
+The loss value of the evaluation set : 0.0324
+
+the accuracy was 279 out of 280
