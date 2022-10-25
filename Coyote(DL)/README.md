@@ -83,12 +83,11 @@ The experimental setting is as follows:
 
 ## Experiment
 
-[![confusion_mat](C:\Users\yejin\Desktop\confusion_mat.png)](https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program/blob/main/Coyote(DL)/confusion_mat.png)
+![image](https://user-images.githubusercontent.com/51157811/197663138-8e83fd2d-acb8-4e87-a99a-413b015c8473.png)
 
 Confusion Matrix 
 
-[![roc](C:\Users\yejin\Desktop\roc.png)](https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program/blob/main/Coyote(DL)/roc.png)
-
+![image](https://user-images.githubusercontent.com/51157811/197663165-97ef0d9b-87d3-4bbf-81e8-aa80008fd086.png)
 ROC curve
 
 
