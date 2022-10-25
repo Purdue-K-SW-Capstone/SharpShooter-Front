@@ -50,9 +50,10 @@ Also, this research covers details about how to build a local network for hackin
 - dBm of SDR was not as much powerful as signals sent by a node device. It can not conduct jamming successfully.
 
 #### Jamming using Motorola canopy
-
-<p align="center"><b>Fig. 3. Result of jamming using motorola canopy on spectrum analyzer</b></p>
-
+<p align="center">
+ <img width="500" alt="SDRCanopy" src="https://user-images.githubusercontent.com/31115765/197655841-e0d912dd-2b56-41a1-9edb-6a2f6b1bf317.jpg">
+ <p align="center"><b>Fig. 3. Result of jamming using motorola canopy on spectrum analyzer</b></p>
+</p>
 - Canopy has two types which are Access Point(AP) and subscriber. It can be connected with external antennas. Subscriber sent tremendous packets to AP.
 - The analyzer proved that there was a noise like a waterfall which can offset all signals near 900MHz.
 - Additionally, all join requests from node devices in range of 902.8 to 914Hz could not reach to the gateway as a join request did not show up on Chirpstack interface of the application server and network server. This points to Jamming comes to fruition. Since commercial LoRaWAN has more channels, jamming more channels can be done by using more canopy at once, or jamming different frequency of LoRaWAN in multiple region using under type of canopy.
