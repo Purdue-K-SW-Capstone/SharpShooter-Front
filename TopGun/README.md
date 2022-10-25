@@ -6,13 +6,13 @@
 ## Team TopGun
     
 | Name         |Call sign| University               | Major                                   | Email               | Github    |
-| :-----------------:| :---------: | :------------------------: | :--------------------------------------------: | :-------------------: | :------------------------------: |
-| Heejun Park |YODA   | Yeonsei Univ.| Computer and Telecommunications Engineering|parkie0517@gmail.com| https://github.com/parkie0517|
+| :-----------------:| :---------: | :------------------------: | :------------------------------------------: | :-------------------: | :------------------------------: |
+| Heejun Park |YODA   | Yeonsei Univ.| Computer & Telecommunications Engineering|parkie0517@gmail.com| https://github.com/parkie0517|
 | Hanbi Kim |PHEONIX  | Chungbuk Nat'l Univ.   | Computer Science | hanbikim20@g.cbnu.ac.kr  | https://github.com/hanbikim    |
 | Jeongho Ha |JAY | Jeju Nat'l Univ.       | Computer Engineering | hjh4212@naver.com| https://github.com/hjh1248    |
 | Seokkhyeon Heo|EASY | Jeju Nat'l Univ.   | Blockchain Security |gj4535@gmail.com| https://github.com/gj1515   |
 | Taeyun Kim |KAMTAE  | Jeju Nat'l Univ.  | Tourism Management & Big Data Science |persimm0ncrack@gmail.com| https://github.com/kamtae |
-| Jeffrey Tsai| GOKU | Purdue Univ.  |  | jeffrey051622@gmail.com    ||
+| Jeffrey Tsai| GOKU | Purdue Univ.  | Computer & Information Technology | jeffrey051622@gmail.com |https://github.com/jtsai23|
 | Kyungrock Kwon| ROCK | Purdue Univ.  | Systems Analysis & Design |kyungrock99@gmail.com |  |
 
 
