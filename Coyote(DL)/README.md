@@ -65,7 +65,7 @@ C:.
 │  move_wav_file.ipynb  
 │  train.csv  
 │  valid.csv  
-│    
+│  
 ├─dataset  
 │  ├─train  
 │  └─valid  
