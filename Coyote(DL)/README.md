@@ -60,19 +60,46 @@ conda install -c conda-forge pyngrok
 
 ### file structure
 C:.  
-│  base_line.ipynb  
-│  make_mel_s.ipynb  
-│  move_wav_file.ipynb  
-│  train.csv  
-│  valid.csv  
-│  
+│  base_line.ipynb
+
+
+│  make_mel_s.ipynb
+
+
+│  move_wav_file.ipynb
+
+
+│  train.csv
+
+
+│  valid.csv
+
+
+│
+
+
 ├─dataset
-│  ├─train  
-│  └─valid  
-├─dataset_all  
+
+
+│  ├─train
+
+
+│  └─valid
+
+
+├─dataset_all
+
+
 └─mel_spectrogram
-    ├─train_mel  
-    └─valid_mel  
+
+
+    ├─train_mel
+    
+    
+    └─valid_mel
+    
+    
+    
  
 
 # Technology Stack
