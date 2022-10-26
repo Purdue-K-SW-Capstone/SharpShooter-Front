@@ -71,7 +71,7 @@ C:.
 │  └─valid   
 ├─dataset_all  
 └─mel_spectrogram
-    ├─train_mel  
+    ├─train_mel    
     └─valid_mel  
  
 
