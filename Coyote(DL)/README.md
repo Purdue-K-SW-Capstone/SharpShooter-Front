@@ -87,6 +87,9 @@ The experimental setting is as follows:
 Confusion Matrix 
 </p>
 
+<p align="center"><img src="./img/confusion_matrix.PNG" style="zoom:100%;" />
+
+
 Confusion Matrix 
 <p align="center">
 ![image](https://user-images.githubusercontent.com/51157811/197663165-97ef0d9b-87d3-4bbf-81e8-aa80008fd086.png)
