@@ -4,12 +4,12 @@
 
 ## Contents
 1. [Team](#team)
-2. [Overview ](#overview)
+2. [Overview](#overview) 
 3. [Research problem statements](#research-problem-statements)
 4. [Research novelty](#research-novelty)
-6. [Requirements](#requirements)
-8. [Technology Stack](#technology-stack)
-9. [Deep Learning](#deep-learning)
+5. [Requirements](#requirements)
+6. [Technology Stack](#technology-stack)
+7. [Deep Learning](#deep-learning)
     - [dataset](#dataset)
     - [Model & Hyper Parameters](#model-&-hyper-parameters)
     - [Experiment](#experiment)
@@ -58,6 +58,21 @@ The method of coyote howling sound classification using Convolutional Neural Net
 conda install -c conda-forge pyngrok  
 ```
 
+### file structure
+C:.
+│  base_line.ipynb
+│  make_mel_s.ipynb
+│  move_wav_file.ipynb
+│  train.csv
+│  valid.csv
+│  
+├─dataset
+│  ├─train
+│  └─valid
+├─dataset_all
+└─mel_spectrogram
+    ├─train_mel
+    └─valid_mel
 
 
 # Technology Stack
