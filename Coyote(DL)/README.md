@@ -66,11 +66,11 @@ C:.
 │  train.csv  
 │  valid.csv  
 │  
-├─dataset  
+├─dataset
 │  ├─train  
 │  └─valid  
 ├─dataset_all  
-└─mel_spectrogram  
+└─mel_spectrogram
     ├─train_mel  
     └─valid_mel  
  
