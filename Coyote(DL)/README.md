@@ -83,20 +83,16 @@ The experimental setting is as follows:
 
 ## Experiment
 <p align="center">
-<img src="[image_src](https://user-images.githubusercontent.com/51157811/197663138-8e83fd2d-acb8-4e87-a99a-413b015c8473.png)">
 Confusion Matrix 
 </p>
 
-<p align="center"><img src="./img/confusion_matrix.PNG" style="zoom:100%;" />
+<p align="center"><img src="./img/confusion_mat.png" />
 
-
-Confusion Matrix 
 <p align="center">
-![image](https://user-images.githubusercontent.com/51157811/197663165-97ef0d9b-87d3-4bbf-81e8-aa80008fd086.png)
 ROC curve
 </p>
-ROC curve
 
+<p align="center"><img src="./img/roc.png" />
 
 
 The loss value of the evaluation set : 0.0324
