@@ -83,7 +83,7 @@ The experimental setting is as follows:
 
 ## Experiment
 <p align="center">
-![image](https://user-images.githubusercontent.com/51157811/197663138-8e83fd2d-acb8-4e87-a99a-413b015c8473.png)
+<img src="[image_src](https://user-images.githubusercontent.com/51157811/197663138-8e83fd2d-acb8-4e87-a99a-413b015c8473.png)">
 Confusion Matrix 
 </p>
 
