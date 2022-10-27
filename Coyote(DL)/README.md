@@ -97,18 +97,12 @@ The experimental setting is as follows:
 - Sampling rate : 16,000 (MFCC)
 
 ## Experiment
-<p align="center">
-Confusion Matrix 
-</p>
+
 
 <p align="center"><img src="./img/confusion_mat.png" />
 
-<p align="center">
-ROC curve
-</p>
 
 <p align="center"><img src="./img/roc.png" />
-
 
 The loss value of the evaluation set : 0.0324
 
