@@ -1,5 +1,3 @@
-
-
 /*******************************************************************************
  * Copyright (c) 2015 Thomas Telkamp and Matthijs Kooijman
  * Copyright (c) 2018 Terry Moore, MCCI
@@ -69,9 +67,8 @@ void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
 static const u1_t PROGMEM APPKEY[16] = { 0x9E, 0xD8, 0x3B, 0x31, 0xB8, 0x9B, 0xE6, 0x9F, 0xC5, 0x8D, 0x6D, 0xFE, 0x54, 0x16, 0x95, 0x7A };
 void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 
-static uint8_t mydata[397][242]; //3 seconds of sound data with sampling rate of 16000. maximum payload of lorawan packet is 242byte. 397 packets are used to represent.
+static uint8_t mydata[31]; //a uint8_t array that contains message from raspberry pi.
 static osjob_t sendjob;
-int packetCount = 0; //sent packet count
 
 // Schedule TX every this many seconds (might become longer due to duty
 // cycle limitations).
@@ -171,9 +168,6 @@ void onEvent (ev_t ev) {
               Serial.println(LMIC.dataLen);
               Serial.println(F(" bytes of payload"));
             }
-            // Schedule next transmission
-            packetCount++;
-            os_setTimedCallback(&sendjob, os_getTime()+sec2osticks(TX_INTERVAL), do_send);
             break;
         case EV_LOST_TSYNC:
             Serial.println(F("EV_LOST_TSYNC"));
@@ -225,7 +219,7 @@ void do_send(osjob_t* j){
         Serial.println(F("OP_TXRXPEND, not sending"));
     } else {
         // Prepare upstream data transmission at the next possible time.
-        LMIC_setTxData2(1, mydata[packetCount], sizeof(mydata[packetCount]), 0);
+        LMIC_setTxData2(1, mydata, sizeof(mydata), 0);
         Serial.println(F("Packet queued"));
     }
     // Next TX is scheduled after TX_COMPLETE event.
@@ -256,21 +250,15 @@ void setup() {
     LMIC_setLinkCheckMode(0);
     LMIC_setDrTxpow(DR_SF7,14);
     LMIC_selectSubBand(1);
- 
-    //read analog sensor data and put them into an 2d array. (one sensor data is splitted into two uint8_t type elements.)
-    for(int i = 0; i < 397; i++){
-      for(int j = 0; j < 242; j++){
-        int a = analogRead(A0);
-        mydata[i][j] = (a >> 8);
-        j++;
-        mydata[i][j] = (a & 0xFF);
-      }
-    }
 
     // Start job (sending automatically starts OTAA too)
     do_send(&sendjob);
 }
-
 void loop() {
+  if(Serial.available() > 0) {
+    String data = Serial.readStringUntil('\n'); //read string from serial port sent by raspberry pi
+    data.getBytes(mydata, 30); //put into mydata array
+    do_send(&sendjob); //schedule next transmission
+  }
     os_runloop_once();
 }
