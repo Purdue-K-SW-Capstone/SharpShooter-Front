@@ -1,15 +1,14 @@
 import paho.mqtt.subscribe as subscribe
 import json
-#import websocket
+import websocket
 from sympy import *
 import math
 from datetime import datetime
 import base64
 
 #websocket connection
-#ws = websocket.WebSocket()
-#ws.connect("ws://192.168.2.222:3333")
-#ws.send("Hello~!~!~")
+ws = websocket.WebSocket()
+ws.connect("ws://192.168.2.222:3333")
 
 dictData = {}
 output_x = 0.0
@@ -30,13 +29,16 @@ def get_coordinate(m):
             lng = content["uplink_message"]["rx_metadata"][0]["location"]["longitude"] #float
             time = content["uplink_message"]["frm_payload"][0:16] #datetime now in str
             
-            time_rm = base64.b64decode(time)
-            time_rm = time_rm.decode('ascii')
+            if id not in dictData:
+                time_rm = base64.b64decode(time)
+                time_rm = time_rm.decode('ascii')
 
-            time_obj = datetime.strptime(time_rm,'%M:%S.%f')
-            dictData[id]=time_obj
+                time_obj = datetime.strptime(time_rm,'%M:%S.%f')
+                dictData[id]=time_obj
                 
-            return (id,time_obj,lat,lng)
+                return (id,time_obj,lat,lng)
+            else:
+                return 'already in'
 
 # getting area
 def get_area(t0,t1,t2):
@@ -140,8 +142,8 @@ def localization(r, m, n, t0, t1, t2, area, theta):
             print('NO')
 
     # Middle of Intersections
-    sum_x = float(0)
-    sum_y = float(0)
+    sum_x = 0.0
+    sum_y = 0.0
     
     # Find the intersection result
     if len(result)!=0:
@@ -195,9 +197,9 @@ while True:
         print(td2)
         
         # time difference 
-        td0 = td0.total_seconds()  *100  
-        td1 = td1.total_seconds()  *100
-        td2 = td2.total_seconds()  *100
+        td0 = td0.total_seconds()  *10  
+        td1 = td1.total_seconds()  *10
+        td2 = td2.total_seconds()  *10
 
         print('diff_td0')
         print(td0)
@@ -207,7 +209,7 @@ while True:
         print(td2)
 
         # if it get the right value of the right condition of hyperbola 
-        if(td0<100 and td1<100 and td2<100):
+        if(td0<50 and td1<50 and td2<50):
             area = get_area(time0_obj,time1_obj,time2_obj) # get the area range 
             print('area is -> ',area)
 
@@ -218,11 +220,13 @@ while True:
             n = -86.90966878841449
             result = localization(r,m,n,td0,td1,td2,area,theta) #localization code returns (Lat, Lng)
             print(result)
+            print(str(result[0])+","+str(result[1])) #Lat, Lng
             print("success")
-            #ws.send(result[0]+","+result[1]) #Lat, Lng
+            
+            ws.send(str(result[0])+","+str(result[1])) # Sending Lat, Lng via web socket
         
     dictData.clear()
     sub.clear() 
     print("Over 1 Cycle")
 
-#ws. close()
+ws. close()
