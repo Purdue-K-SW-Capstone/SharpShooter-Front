@@ -1,0 +1,1451 @@
+[
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:45:36.202684Z",
+                "timeSinceGPSEpoch": "1354049154.202684s",
+                "rssi": -78,
+                "loRaSNR": 7.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAABarjkw==",
+                "uplinkID": "bSXo5XmeT0CIiy7zWEElLQ==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904300000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1235,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "fbyg"
+                    }
+                ]
+            },
+            "mic": "980763b1"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:45:30.495460Z",
+                "timeSinceGPSEpoch": "1354049148.495460s",
+                "rssi": -82,
+                "loRaSNR": 10.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAABVPNuw==",
+                "uplinkID": "dwPJAFXsRhyo6ptfrN53fg==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1234,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "MLgn"
+                    }
+                ]
+            },
+            "mic": "9150fa54"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:45:24.788284Z",
+                "timeSinceGPSEpoch": "1354049142.788284s",
+                "rssi": -82,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAABPy4Ew==",
+                "uplinkID": "ZKZDl8gjQrC8WXLRrTYPCQ==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904500000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1233,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "FxTX"
+                    }
+                ]
+            },
+            "mic": "16e94bbf"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:45:19.081045Z",
+                "timeSinceGPSEpoch": "1354049137.081045s",
+                "rssi": -81,
+                "loRaSNR": 7.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAABKWiLA==",
+                "uplinkID": "RhAxPZxISCi2GNnYLgv4Bg==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 905300000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1232,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "Ro0s"
+                    }
+                ]
+            },
+            "mic": "a015a94f"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:45:04.558028Z",
+                "timeSinceGPSEpoch": "1354049122.558028s",
+                "rssi": -82,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAA8gHow==",
+                "uplinkID": "NiceN7byQ42fBBBoO2ozcg==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904700000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1229,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "Z/H+"
+                    }
+                ]
+            },
+            "mic": "4e74faae"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:56.252212Z",
+                "timeSinceGPSEpoch": "1354049114.252212s",
+                "rssi": -80,
+                "loRaSNR": 7.5,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAA0lLCw==",
+                "uplinkID": "rSgU9uN5QDaRAzovv/XkqA==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904300000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1228,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "7FDw"
+                    }
+                ]
+            },
+            "mic": "aba61414"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:50.545036Z",
+                "timeSinceGPSEpoch": "1354049108.545036s",
+                "rssi": -81,
+                "loRaSNR": 8.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAvI1Yw==",
+                "uplinkID": "8dNPT58ERayNqEXkrnmwHQ==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1227,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "Be70"
+                    }
+                ]
+            },
+            "mic": "3624fa5a"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:44.837789Z",
+                "timeSinceGPSEpoch": "1354049102.837789s",
+                "rssi": -80,
+                "loRaSNR": 9.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAApsfdA==",
+                "uplinkID": "msGW+R3OTKyIKc7TGC+Qkw==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1226,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "rJdT"
+                    }
+                ]
+            },
+            "mic": "f623a787"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:41.729188Z",
+                "timeSinceGPSEpoch": "1354049099.729188s",
+                "rssi": -83,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAmuwew==",
+                "uplinkID": "3SqUIXh4QPuy4xHwwGruhA==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 903900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1225,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "4Vt4"
+                    }
+                ]
+            },
+            "mic": "c499086a"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:36.021957Z",
+                "timeSinceGPSEpoch": "1354049094.021957s",
+                "rssi": -78,
+                "loRaSNR": 9.5,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAhSanA==",
+                "uplinkID": "OSlDHaNuSsqGk0cpInwwxg==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 905100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1224,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "x6ZX"
+                    }
+                ]
+            },
+            "mic": "c5ea8ccd"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:27.716204Z",
+                "timeSinceGPSEpoch": "1354049085.716204s",
+                "rssi": -81,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAZXeQw==",
+                "uplinkID": "8AAUpBaWRFKDxLup91/I3g==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1223,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "FDVt"
+                    }
+                ]
+            },
+            "mic": "66749c0a"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:22.008957Z",
+                "timeSinceGPSEpoch": "1354049080.008957s",
+                "rssi": -82,
+                "loRaSNR": 10,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAT7IVA==",
+                "uplinkID": "j76It/noSFOom3gs+hKk4g==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1222,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "0Zml"
+                    }
+                ]
+            },
+            "mic": "af84dd11"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:44:10.594533Z",
+                "timeSinceGPSEpoch": "1354049068.594533s",
+                "rssi": -78,
+                "loRaSNR": 10.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAAkQAAAJCcvA==",
+                "uplinkID": "Y2WqHVoZQGGuI9ZnPBVgIw==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 905100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1220,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "B4c/"
+                    }
+                ]
+            },
+            "mic": "c0bed5b3"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-11-14T22:10:52Z",
+                "timeSinceGPSEpoch": null,
+                "rssi": -88,
+                "loRaSNR": 10,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0f9K6w==",
+                "uplinkID": "njeLXxX2Q4WAqqomBnIMnw==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904500000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1100,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "6FjI"
+                    }
+                ]
+            },
+            "mic": "aba9c5aa"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-11-14T22:10:46Z",
+                "timeSinceGPSEpoch": null,
+                "rssi": -82,
+                "loRaSNR": 10.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0ag1Ow==",
+                "uplinkID": "mI9IFFJaRbyeVSDhv7QB3g==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 903900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1099,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "+22h"
+                    }
+                ]
+            },
+            "mic": "410054d0"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:36.644311Z",
+                "timeSinceGPSEpoch": "1354048374.644311s",
+                "rssi": -88,
+                "loRaSNR": 10,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0XjF6w==",
+                "uplinkID": "JNzsjyCSSHmiyVR8Lt2P9w==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904700000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1098,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "dI1C"
+                    }
+                ]
+            },
+            "mic": "5eee702b"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:28.338560Z",
+                "timeSinceGPSEpoch": "1354048366.338560s",
+                "rssi": -77,
+                "loRaSNR": 7.5,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0PoJlA==",
+                "uplinkID": "lQ7GZC/FTIez4a5g3J271g==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 905300000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1097,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "QAni"
+                    }
+                ]
+            },
+            "mic": "20cf2582"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:25.229911Z",
+                "timeSinceGPSEpoch": "1354048363.229911s",
+                "rssi": -82,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0Mqaaw==",
+                "uplinkID": "PjL+Bj1nQFelYYKfIkL/jA==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1096,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "hjZe"
+                    }
+                ]
+            },
+            "mic": "806644dc"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:19.522727Z",
+                "timeSinceGPSEpoch": "1354048357.522727s",
+                "rssi": -82,
+                "loRaSNR": 9.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QAB0HOEuw==",
+                "uplinkID": "8hweRnSJSiSIdswu7T9aCw==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904700000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1095,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "QLWU"
+                    }
+                ]
+            },
+            "mic": "d089e37f"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:08.108303Z",
+                "timeSinceGPSEpoch": "1354048346.108303s",
+                "rssi": -80,
+                "loRaSNR": 9.25,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QABz8VZIw==",
+                "uplinkID": "3IgosOpbSaiaqDpSDAsueQ==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904100000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1093,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "6FF1"
+                    }
+                ]
+            },
+            "mic": "4ee683dd"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:32:02.401071Z",
+                "timeSinceGPSEpoch": "1354048340.401071s",
+                "rssi": -82,
+                "loRaSNR": 9.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QABz25DQw==",
+                "uplinkID": "+MJ8zhHdTeK3ntnP+4qP/w==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 903900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1092,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "SpKn"
+                    }
+                ]
+            },
+            "mic": "39067913"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:31:54.095303Z",
+                "timeSinceGPSEpoch": "1354048332.095303s",
+                "rssi": -80,
+                "loRaSNR": 7.75,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QABzu+G2w==",
+                "uplinkID": "6AmI6FagTXC0qAdY3pwU4A==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904300000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1091,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "TVbQ"
+                    }
+                ]
+            },
+            "mic": "872c1fea"
+        }
+    },
+    {
+        "rxInfo": [
+            {
+                "gatewayID": "rB8J//4ATsY=",
+                "time": "2022-12-02T20:31:48.388080Z",
+                "timeSinceGPSEpoch": "1354048326.388080s",
+                "rssi": -81,
+                "loRaSNR": 10,
+                "channel": 0,
+                "rfChain": 0,
+                "board": 0,
+                "antenna": 0,
+                "location": {
+                    "latitude": 0,
+                    "longitude": 0,
+                    "altitude": 0,
+                    "source": "UNKNOWN",
+                    "accuracy": 0
+                },
+                "fineTimestampType": "NONE",
+                "context": "AAAAAAAAAAAA6QABzphxBA==",
+                "uplinkID": "zPVu68TbQZy5rmBBd+UNDA==",
+                "crcStatus": "CRC_OK"
+            }
+        ],
+        "txInfo": {
+            "frequency": 904900000,
+            "modulation": "LORA",
+            "loRaModulationInfo": {
+                "bandwidth": 125,
+                "spreadingFactor": 7,
+                "codeRate": "4/5",
+                "polarizationInversion": false
+            }
+        },
+        "phyPayload": {
+            "mhdr": {
+                "mType": "UnconfirmedDataUp",
+                "major": "LoRaWANR1"
+            },
+            "macPayload": {
+                "fhdr": {
+                    "devAddr": "008f0f89",
+                    "fCtrl": {
+                        "adr": true,
+                        "adrAckReq": false,
+                        "ack": false,
+                        "fPending": false,
+                        "classB": false
+                    },
+                    "fCnt": 1090,
+                    "fOpts": null
+                },
+                "fPort": 1,
+                "frmPayload": [
+                    {
+                        "bytes": "yn0r"
+                    }
+                ]
+            },
+            "mic": "d03e8c6a"
+        }
+    }
+]
