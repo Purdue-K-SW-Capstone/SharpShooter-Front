@@ -84,15 +84,15 @@ version
 Imported files and assets
 - Jobs
 - NodeJS plugins for Unity
-- MapBox SDK
-- websocket-sharp.dll
-- simple Android notifications free
-- Clean Setting UI
-- Loading screen animation
-- TextMesh Pro
+- MapBox SDK (https://docs.mapbox.com/unity/maps/guides/)
+- websocket-sharp.dll (https://github.com/sta/websocket-sharp)
+- simple Android notifications free (https://assetstore.unity.com/packages/tools/integration/simple-android-notifications-free-68626)
+- Clean Setting UI (https://assetstore.unity.com/packages/tools/gui/clean-settings-ui-65588)
+- Loading screen animation (https://assetstore.unity.com/packages/tools/loading-screen-animation-98505)
+- TextMesh Pro (download: Unity Editor -> window -> asset)
 
 Error debugging
-- "namespace name does not exist" during MapBox SDK import: an error related to Mapbox AR, resolved after deleting all AR-related files in Mapbox.
+- "namespace name does not exist" during MapBox SDK import": an error related to Mapbox AR, resolved after deleting all AR-related files in Mapbox.
 - "warning: the option setting 'android.enabler8=false' is deprecated. it will be removed in version 5.0 of the android gradle plugin. you will no longer be able to disable r8", "starting a gradle daemon, 1 incompatible daemon could not be reused, use --status for details": an error due to android gradle file, resolved after changing version from com.android.tools.build:gradle:3.6.0 to 3.4.0 inside the 'baseProjectTemplate.gradle' file.
 - "manifest merger failed 22 cannot be smaller than version 24 declared in library error": an error related to version error of minSDK and targetSDK in the AndroidManifest.xml in the Unity library file.
 - "Import error: the name 'heading' does not exist in the current context": an error in DeviceLocationProvider.cs script file due to encoding issue. Change encoding method from ISO-8859 to UTF-8 or ASCII.
