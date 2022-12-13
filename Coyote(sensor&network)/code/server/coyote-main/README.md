@@ -7,7 +7,7 @@
 - docker build . -t <your username>/coyote-main
 - docker run -p 8081:8081 -p 3333:3333 -d <your username>/coyote-main
 
-server is running on your localhost.
+server will run on your localhost.
 
 POST http://localhost:8081/api/sensors/getSound1Coord : get the coordinate information of sound 1 sensor
   
