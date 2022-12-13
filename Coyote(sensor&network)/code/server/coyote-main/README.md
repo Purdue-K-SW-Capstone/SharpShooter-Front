@@ -4,8 +4,8 @@
 
 - install docker desktop
 - clone this repository
-- docker build . -t <your username>/coyote-main
-- docker run -p 8081:8081 -p 3333:3333 -d <your username>/coyote-main
+- docker build . -t your username/coyote-main
+- docker run -p 8081:8081 -p 3333:3333 -d your username/coyote-main
 
 server will run on your localhost.
 
