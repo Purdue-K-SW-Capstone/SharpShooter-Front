@@ -1,6 +1,6 @@
 //open websocket server port 3333
 const wsServer = require('ws').Server;
-const py = new wsServer({ port: 3333});
+const py = new wsServer({ port: process.env.websocketPORT});
 console.log('Server opened on port 3333.');
 
 //using express (node js web application framework)
@@ -46,6 +46,6 @@ py.on('connection', (client) => { //server connected -> execute function
 app.use("/api", appRoutes);
 
 //open http port 8081
-app.listen(8081, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("listening on port 8081");
 })
