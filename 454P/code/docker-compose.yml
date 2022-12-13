@@ -10,7 +10,7 @@ services:
       - "10000:8888"
     working_dir: /app
     volumes:
-      - $PWD:/app
+      - ./:/app
     environment:
       JUPYTER_ENABLE_LAB: "yes"
     command: jupyter-notebook --NotebookApp.token='' --NotebookApp.password=''
