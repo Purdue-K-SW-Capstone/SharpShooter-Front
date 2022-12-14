@@ -32,7 +32,6 @@ Also, this research covers details about how to build a local network for hackin
 <p align="center">
  <img width="700" alt="LocalLoRaWAN" align="center" src="https://user-images.githubusercontent.com/31115765/197547495-1a1319bb-7026-472f-a643-208f0badc29b.png">
  <p align="center"><b>Fig. 1. Set up of local LoRaWAN</b></p>
-</p>
 
 - The whole network consists of gateway, gateway bridge, network server, application server, and two Database servers.
 - Using Raspberry Pi as a network server and an application server. RAK7249 as a gateway
@@ -44,7 +43,6 @@ Also, this research covers details about how to build a local network for hackin
 <p align="center">
  <img width="500" alt="SDR" src="https://user-images.githubusercontent.com/31115765/197550817-6f1a3aad-2a3a-4c2f-9a3a-db97c081b983.jpg">
  <p align="center"><b>Fig. 2. Result of jamming using SDR on spectrum analyzer</b></p>
-</p>
 
 - Jamming was conducted by Software Defined Radio(SDR). HackRF one and USRP B200 were used as SDR.
 - dBm of SDR was not as much powerful as signals sent by a node device. It can not conduct jamming successfully.
@@ -53,7 +51,6 @@ Also, this research covers details about how to build a local network for hackin
 <p align="center">
  <img width="500" alt="SDRCanopy" src="https://user-images.githubusercontent.com/31115765/197655841-e0d912dd-2b56-41a1-9edb-6a2f6b1bf317.jpg">
  <p align="center"><b>Fig. 3. Result of jamming using motorola canopy on spectrum analyzer</b></p>
-</p>
 - Canopy has two types which are Access Point(AP) and subscriber. It can be connected with external antennas. Subscriber sent tremendous packets to AP.
 - The analyzer proved that there was a noise like a waterfall which can offset all signals near 900MHz.
 - Additionally, all join requests from node devices in range of 902.8 to 914Hz could not reach to the gateway as a join request did not show up on Chirpstack interface of the application server and network server. This points to Jamming comes to fruition. Since commercial LoRaWAN has more channels, jamming more channels can be done by using more canopy at once, or jamming different frequency of LoRaWAN in multiple region using under type of canopy.
@@ -79,22 +76,42 @@ Using Chirpstack v3
     - Redis 5.0.
     - Postgresql 9.5.
 
-### Gnu Radio & LoRa Packet UDP Reader
-On Ubuntu 20.04
+### Jamming Analysis
+To run the jamming analysis, [Docker](https://www.docker.com/) is required.
 
-- [LoRa_Craft](https://github.com/PentHertz/LoRa_Craft)
-    - Python 2.7
-        - Scapy
-    - Gnu Radio 3.8
-    - [gr-LoRa 0.6.2](https://github.com/rpp0/gr-lora)
-        - `python2-numpy`, `python2-scipy`, `swig`, `cppunit`, `fftw`, `gnuradio`, `libvolk`, `log4cpp`, `cmake`, `wx`,
-        and [liquid-dsp](https://github.com/jgaeddert/liquid-dsp)
-- Gnu Radio 3.9
-    - [gr-osmosdr](https://github.com/osmocom/gr-osmosdr)
-    - [hackrf@latest](https://github.com/greatscottgadgets/hackrf)
-    - [ettus uhd driver](https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux)
+Command to start up docker container
+  ```
+  docker compose up
+  ```
+- Ctrl+C will stop the container
 
-- [Golang 1.13](https://go.dev/)
+To enter Jupyter Notebook, type in
+
+[localhost:10000](http://localhost:10000/lab/tree/jamming_analysis.ipynb)
+
+in your browser, or click the link.
+
+### Arduino Codes
+To compile the Arduino codes, [Docker](https://www.docker.com/) is required.
+
+At code/arduino
+
+Command to make a docker image
+  ```
+  docker build -t arduino .
+  ```
+
+Command to run the docker image
+  ```
+  docker run -it --rm -v $PWD/volumes/Arduino:/Arduino arduino
+  ```
+- Ctrl+C will stop the container 
+To compile the codes, type in
+  ```
+  arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose ESPCounter.ino to compile the code
+  ```
+  
+Inside the container, the codes are located in /volume/Ardunio/ESPCounter
 
 ## 👼 Collaborator
 
