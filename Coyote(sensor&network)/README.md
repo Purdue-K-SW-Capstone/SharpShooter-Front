@@ -100,10 +100,12 @@ Configuration before executing
  5. change the SDK script `DeviceLocationProvider.cs` to (due to "Import error: the name 'heading' does not exist in the current context": an error in DeviceLocationProvider.cs script file due to encoding issue. Change encoding method from ISO-8859 to UTF-8 or ASCII.)
         
  6. How to set up a Mobile Phone Connection Environment for Project Run
+ 
         1. Install the Unity Remote5 app on your phone device
         2. Go to your phone developer options → Set USB Debugging Permissions to Allow
         3. Unity Editor → Edit → Project settings → Editor → Unity Remote → Set ‘Device Settings’ to ‘Any Android Device’
         4. Run the Unity Remote5 app on your phone → Connect your phone to your computer (data cable) → Project Run
+
  7. Android only (version: Android 7.0 'Nougat', API Level 24 or higher)
 
 Error debugging
