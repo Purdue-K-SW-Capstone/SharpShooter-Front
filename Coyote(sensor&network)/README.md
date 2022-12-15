@@ -62,19 +62,24 @@ The Things Stack Community Edition v3.22.1
 
 ### Node.js Server
 
-dependencies
-- body-parser 1.20.1
-- cors 2.8.5
-- dotenv 16.0.3
-- express 4.18.2
-- moment 2.29.4
-- mongoose 6.7.3
-- nodemon 2.0.20
-- websocket 1.0.34
-- ws 8.11.0
+install docker desktop, at code/server/coyote-main, run
 
-start server
-- type 'npm start'
+        docker build . -t your username/coyote-main
+        docker run -p 8081:8081 -p 3333:3333 -d your username/coyote-main
+
+server will run on your localhost.
+
+POST http://localhost:8081/api/sensors/getSound1Coord : get the coordinate information of sound 1 sensor
+  
+POST http://localhost:8081/api/sensors/getSound2Coord : get the coordinate information of sound 2 sensor
+  
+POST http://localhost:8081/api/sensors/getSound3Coord : get the coordinate information of sound 3 sensor
+  
+POST http://localhost:8081/api/coyotes/getInitialCoyotes : get the coordinate information of last 5 detected coyotes
+
+websocket connection
+
+ws://127.0.0.1:3333
 
 ### Unity
 
