@@ -97,7 +97,7 @@ Configuration before executing
  2. Unity Editor → File → Build setting → Putting a Assets/Scenes/LoadingScene, Assets/Scenes/Coyote inside ‘Scenes in Build’
  3. Unity Editor → Edit → Project settings → Player → Android → OtherSettings → Identification → Set ‘Minimum API Level’ to Android 7.0 ‘Nougat’ (API Level 24), Set ‘Target API Level’ to Automatic(highest installed)
  4. Unity Editor → File → Build setting → Platform →Set to ‘Android’
- 5. change the SDK script `DeviceLocationProvider.cs` to (due to "Import error: the name 'heading' does not exist in the current context": an error in DeviceLocationProvider.cs script file due to encoding issue. Change encoding method from ISO-8859 to UTF-8 or ASCII.)
+ 5. If you downloaded MapBox SDK again, change the SDK script `DeviceLocationProvider.cs` to code/unity/DeviceLocationProvider.cs (due to "Import error: the name 'heading' does not exist in the current context": an error in DeviceLocationProvider.cs script file due to encoding issue. Change encoding method from ISO-8859 to UTF-8 or ASCII.)
         
  6. How to set up a Mobile Phone Connection Environment for Project Run
  
