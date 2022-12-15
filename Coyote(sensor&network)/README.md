@@ -93,7 +93,7 @@ Imported files and assets
 
 Configuration before executing
 
-    1. Make sure to insert the Unity Scene File before running
+ 1. Make sure to insert the Unity Scene File before running
         1. Unity Editor → File → Build setting → Putting a Assets/Scenes/LoadingScene, Assets/Scenes/Coyote inside ‘Scenes in Build’
     2. Unity Editor → Edit → Project settings → Player → Android → OtherSettings → Identification → Set ‘Minimum API Level’ to Android 7.0 ‘Nougat’ (API Level 24), Set ‘Target API Level’ to Automatic(highest installed)
     3. Unity Editor → File → Build setting → Platform →Set to ‘Android’
