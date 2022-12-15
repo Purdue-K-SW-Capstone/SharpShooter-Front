@@ -91,6 +91,21 @@ Imported files and assets
 - Loading screen animation (https://assetstore.unity.com/packages/tools/loading-screen-animation-98505)
 - TextMesh Pro (download: Unity Editor -> window -> asset)
 
+Configuration before executing
+
+    1. Make sure to insert the Unity Scene File before running
+        1. Unity Editor → File → Build setting → Putting a Assets/Scenes/LoadingScene, Assets/Scenes/Coyote inside ‘Scenes in Build’
+    2. Unity Editor → Edit → Project settings → Player → Android → OtherSettings → Identification → Set ‘Minimum API Level’ to Android 7.0 ‘Nougat’ (API Level 24), Set ‘Target API Level’ to Automatic(highest installed)
+    3. Unity Editor → File → Build setting → Platform →Set to ‘Android’
+    4. change the SDK script `DeviceLocationProvider.cs` to (due to "Import error: the name 'heading' does not exist in the current context": an error in DeviceLocationProvider.cs script file due to encoding issue. Change encoding method from ISO-8859 to UTF-8 or ASCII.)
+        
+    5. How to set up a Mobile Phone Connection Environment for Project Run
+        1. Install the Unity Remote5 app on your phone device
+        2. Go to your phone developer options → Set USB Debugging Permissions to Allow
+        3. Unity Editor → Edit → Project settings → Editor → Unity Remote → Set ‘Device Settings’ to ‘Any Android Device’
+        4. Run the Unity Remote5 app on your phone → Connect your phone to your computer (data cable) → Project Run
+    6. Android only (version: Android 7.0 'Nougat', API Level 24 or higher)
+
 Error debugging
 - "namespace name does not exist" during MapBox SDK import": an error related to Mapbox AR, resolved after deleting all AR-related files in Mapbox.
 - "warning: the option setting 'android.enabler8=false' is deprecated. it will be removed in version 5.0 of the android gradle plugin. you will no longer be able to disable r8", "starting a gradle daemon, 1 incompatible daemon could not be reused, use --status for details": an error due to android gradle file, resolved after changing version from com.android.tools.build:gradle:3.6.0 to 3.4.0 inside the 'baseProjectTemplate.gradle' file.
