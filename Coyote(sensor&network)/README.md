@@ -20,7 +20,7 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 
 ---
 
-<img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/196007372-09234210-6f14-482a-977b-478603fe76ab.png">
+<img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/207974403-54748460-8ba1-49e5-918d-5d0020049919.png">
 
 ### Environment Settings
 
