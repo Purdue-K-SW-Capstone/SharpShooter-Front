@@ -69,17 +69,19 @@ install docker desktop, at code/server/coyote-main, run
 
 server will run on your localhost.
 
-POST http://localhost:8081/api/sensors/getSound1Coord : get the coordinate information of sound 1 sensor
+http connection
+
+        POST http://localhost:8081/api/sensors/getSound1Coord : get the coordinate information of sound 1 sensor
   
-POST http://localhost:8081/api/sensors/getSound2Coord : get the coordinate information of sound 2 sensor
+        POST http://localhost:8081/api/sensors/getSound2Coord : get the coordinate information of sound 2 sensor
   
-POST http://localhost:8081/api/sensors/getSound3Coord : get the coordinate information of sound 3 sensor
+        POST http://localhost:8081/api/sensors/getSound3Coord : get the coordinate information of sound 3 sensor
   
-POST http://localhost:8081/api/coyotes/getInitialCoyotes : get the coordinate information of last 5 detected coyotes
+        POST http://localhost:8081/api/coyotes/getInitialCoyotes : get the coordinate information of last 5 detected coyotes
 
 websocket connection
 
-ws://127.0.0.1:3333
+        ws://127.0.0.1:3333
 
 ### Unity
 
