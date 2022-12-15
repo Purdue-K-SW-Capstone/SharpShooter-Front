@@ -69,7 +69,7 @@ install docker desktop, at code/server/coyote-main, run
 
 server will run on your localhost.
 
-http connection
+http connection (port 8081)
 
         POST http://localhost:8081/api/sensors/getSound1Coord : get the coordinate information of sound 1 sensor
   
@@ -79,7 +79,7 @@ http connection
   
         POST http://localhost:8081/api/coyotes/getInitialCoyotes : get the coordinate information of last 5 detected coyotes
 
-websocket connection
+websocket connection (port 3333)
 
         ws://127.0.0.1:3333
 
