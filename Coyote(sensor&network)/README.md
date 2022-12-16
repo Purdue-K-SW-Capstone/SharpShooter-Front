@@ -33,7 +33,15 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 
 - USB microphone AK5371
 
-Arduino IDE
+### End Node Settings
+
+Raspberry Pi - Microphone Settings
+
+Raspberry Pi - ESP 32 Settings
+
+code (code/end_node/rec_voice_ver1.py)
+
+ESP 32 - Arduino IDE Settings
 
 - version: 2.0.0 (available on Windows)
 
