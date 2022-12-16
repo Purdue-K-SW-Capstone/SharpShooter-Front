@@ -27,9 +27,11 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 ---
 
 ### Sensors
-Heltec ESP32 WiFi LoRa 32 (V2)
+- Heltec ESP32 WiFi LoRa 32 (V2)
 
-- ESP32 (dual-core 32-bit MCU + ULP cor) with LoRa node chip SX1276/SX1278
+- Raspberry Pi v3
+
+- USB microphone AK5371
 
 Arduino IDE
 
