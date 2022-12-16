@@ -62,6 +62,18 @@ The Things Stack Community Edition v3.22.1
 
 ### Localization
 
+dependencies
+
+paho-mqtt
+
+        pip install paho-mqtt
+
+sympy
+
+        pip install sympy
+        
+
+
 Environment setting
 
 <img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208128888-7d697cc6-d516-472d-aa01-26b31e904cb3.jpg">
