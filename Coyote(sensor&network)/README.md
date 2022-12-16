@@ -43,11 +43,6 @@ Arduino IDE
 
 - library used for communication between end device and tts(the things stack): https://github.com/mcci-catena/arduino-lmic
 
-- FFT on ESP32 guide: https://medium.com/swlh/how-to-perform-fft-onboard-esp32-and-get-both-frequency-and-amplitude-45ec5712d7da
-
-MAX4466 Electret Microphone Amplifier
-
-- Datasheet: https://cdn-shop.adafruit.com/datasheets/MAX4465-MAX4469.pdf
 
 ### Gateway
 RAK7249 WisGate Edge Max from RAKwireless
