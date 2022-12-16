@@ -35,15 +35,21 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 
 ### End Node Settings
 
-Raspberry Pi - Microphone Settings
+Microphone - Raspberry Pi - ESP 32
 
-Raspberry Pi - ESP 32 Settings
+code/rec_voice_ver1.py
 
-code (code/end_node/rec_voice_ver1.py)
+- dependencies
+        
+        #install sounddevice ver 0.4.1
+        python3 -m pip install sounddevice
+        
+        #install pyserial ver 3.4
+        python -m pip install pyserial
 
 ESP 32 - Arduino IDE Settings
 
-- version: 2.0.0 (available on Windows)
+- Arduino IDE version: 2.0.0 (available on Windows)
 
 - Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
 
