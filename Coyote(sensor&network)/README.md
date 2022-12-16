@@ -73,6 +73,8 @@ The Things Stack Community Edition v3.22.1
 
 - confidentials
 
+        console address: https://nam1.cloud.thethings.network/console/
+        
         id: lim406@purdue.edu
         
         pw: featherC9130*
