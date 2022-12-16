@@ -61,8 +61,11 @@ RAK7249 WisGate Edge Max from RAKwireless
 The Things Stack Community Edition v3.22.1
 
 - confidentials
+
         id: lim406@purdue.edu
+        
         pw: featherC9130*
+        
         (expired by 2022.12.22)
 
 ### Localization
