@@ -60,6 +60,11 @@ RAK7249 WisGate Edge Max from RAKwireless
 
 The Things Stack Community Edition v3.22.1
 
+- confidentials
+        id: lim406@purdue.edu
+        pw: featherC9130*
+        (expired by 2022.12.22)
+
 ### Localization
 
 - dependencies
@@ -76,6 +81,7 @@ sympy
 
 documentation link: https://www.thethingsindustries.com/docs/integrations/mqtt/mqtt-clients/eclipse-paho/
 
+change mqtt subscribe settings to connect to your own tts server
         sub = subscribe.simple(topics=['#'], keepalive=10 ,hostname="your tts server", port=1883, auth={'username':"your application name",'password':"your application's api key"}, msg_count=3)
 
 - Environment setting
