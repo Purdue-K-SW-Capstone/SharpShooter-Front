@@ -62,7 +62,7 @@ The Things Stack Community Edition v3.22.1
 
 ### Localization
 
-dependencies
+- dependencies
 
 paho-mqtt
 
@@ -72,9 +72,13 @@ sympy
 
         pip install sympy
         
+- mqtt subscribe settings
 
+documentation link: https://www.thethingsindustries.com/docs/integrations/mqtt/mqtt-clients/eclipse-paho/
 
-Environment setting
+        sub = subscribe.simple(topics=['#'], keepalive=10 ,hostname="your tts server", port=1883, auth={'username':"your application name",'password':"your application's api key"}, msg_count=3)
+
+- Environment setting
 
 <img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208128888-7d697cc6-d516-472d-aa01-26b31e904cb3.jpg">
 
