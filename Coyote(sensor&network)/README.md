@@ -53,18 +53,18 @@ code/rec_voice_ver1.py
 
 - USB port setting
 
-            check ttyUSB port using
-                $ ls /dev
-            check idProduct value using
-                $ udevadm info --name=/dev/"checked tty usb port" --attribute-walk
-            check rules file
-                $ sudo nano /etc/udev/rules.d/**
-            write this in the rules file
-                SUBSYSTEM=="tty", ATTRS{idProduct}=="idProduct value checked before", SYMLINK+="ttyUSB_DEV1"
-            run
-                $ sudo udevadm trigger
-            check the new fixed port
-                $ ls -l /dev/ttyUSB*
+        check ttyUSB port using
+            $ ls /dev
+        check idProduct value using
+            $ udevadm info --name=/dev/"checked tty usb port" --attribute-walk
+        check rules file
+            $ sudo nano /etc/udev/rules.d/**
+        write this in the rules file
+            SUBSYSTEM=="tty", ATTRS{idProduct}=="idProduct value checked before", SYMLINK+="ttyUSB_DEV1"
+        run
+            $ sudo udevadm trigger
+        check the new fixed port
+            $ ls -l /dev/ttyUSB*
 
 ESP 32 - Arduino IDE Settings
 
