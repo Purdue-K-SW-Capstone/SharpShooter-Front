@@ -60,6 +60,12 @@ RAK7249 WisGate Edge Max from RAKwireless
 
 The Things Stack Community Edition v3.22.1
 
+### Localization
+
+Environment setting
+
+<img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208128888-7d697cc6-d516-472d-aa01-26b31e904cb3.jpg">
+
 ### Node.js Server
 
 install docker desktop, at code/server/coyote-main, run
