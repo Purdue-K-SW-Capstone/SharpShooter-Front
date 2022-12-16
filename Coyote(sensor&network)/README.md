@@ -72,11 +72,11 @@ The Things Stack Community Edition v3.22.1
 
 - dependencies
 
-paho-mqtt
+    paho-mqtt
 
         pip install paho-mqtt
 
-sympy
+    sympy
 
         pip install sympy
         
