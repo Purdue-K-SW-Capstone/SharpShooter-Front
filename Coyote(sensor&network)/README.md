@@ -1,7 +1,7 @@
 
 # Coyote Team 1: IoT & Network
 
-## LoRaWAN implementation in acoustic and visual detection of coyotes
+## LoRaWAN implementation for acoustic localization of coyotes
 
 ### Problem Statement
 
