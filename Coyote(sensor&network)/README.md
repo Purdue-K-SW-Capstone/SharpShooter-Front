@@ -72,6 +72,11 @@ ESP 32 - Arduino IDE Settings
 
 - Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
 
+        1. go to File>Preference and add additional board manager (link: https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.6/package_heltec_esp32_index.json)
+        2. go to Tools>Board>Borads Manager, search 'Heltec ESP32' and download the boards manager
+        3. go to Sketch>Include library>Manage libraries and install MCCI LoRaWAN LMIC library by IBM, Matthijs Kooijman, Terry Moore, ChaeHee Won, Frank Rose
+        4. add #define hal_init LMICHAL_init in lmic_project_config.h file.
+
 - board manager for Heltec ESP32 WiFi LoRa 32 (V2) : https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.6/package_heltec_esp32_index.json 
 
 - end device - server communication guide: https://www.aeq-web.com/lorawan-ttn-mit-heltec-esp32-lora-board-abp-mode/?lang=en
