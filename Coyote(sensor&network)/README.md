@@ -53,7 +53,7 @@ code/rec_voice_ver1.py should be run inside the Raspberry Pi.
         #install pyserial ver 3.4
         python -m pip install pyserial
 
-The microphone(acoustic sensor) needs port setting due to the usb port changing issue. It happens when the Raspberry Pi reboots, so it needs to be fixed to a custom port ttyUSB_DEV1. Follwing is the setting process of the Raspberry Pi.
+The microphone(acoustic sensor) needs port setting due to the usb port changing issue. It happens when the Raspberry Pi reboots, so it needs to be fixed to a custom port ttyUSB_DEV1. Following is the setting process of the Raspberry Pi.
 
 - USB port setting
 
