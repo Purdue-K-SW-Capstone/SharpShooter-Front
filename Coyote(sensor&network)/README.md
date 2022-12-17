@@ -41,7 +41,7 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 
 Microphone - Raspberry Pi - ESP 32
 
-code/rec_voice_ver1.py
+code/rec_voice_ver1.py should be run inside the Raspberry Pi.
 
 - dependencies
         
@@ -76,6 +76,7 @@ ESP 32 - Arduino IDE Settings
         2. go to Tools>Board>Borads Manager, search 'Heltec ESP32' and download the boards manager
         3. go to Sketch>Include library>Manage libraries and install MCCI LoRaWAN LMIC library by IBM, Matthijs Kooijman, Terry Moore, ChaeHee Won, Frank Rose
         4. add #define hal_init LMICHAL_init in lmic_project_config.h file.
+        5. put APPEUI, DEVEUI, APPKEY of your own end node.
 
 - board manager for Heltec ESP32 WiFi LoRa 32 (V2) : https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.6/package_heltec_esp32_index.json 
 
@@ -128,6 +129,12 @@ The Things Stack Community Edition v3.22.1
 - Environment setting
 
 <img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208128888-7d697cc6-d516-472d-aa01-26b31e904cb3.jpg">
+
+2r is the distance between sensors. and sensors are located in the form of an equilateral triangle. time_obj is the timestamp that indicates the detection time. td0 is the difference of 0, 1 and td1 is between 1, 2 and td2 is between 2, 0. v is the speed of sound. the area represents the section sound source is located.
+
+The input you have to change is 2r, (m, n), which are the distance between sensors, and the location coordinates of the center of the triangle. Set those values of your own experiment environment. The default values are 304.8 cm and the location of KSW-square at purdue university.
+
+You need to measure the cardinal direction and put the difference to the value theta. The default value is 8 degrees.
 
 ### Node.js Server
 
@@ -194,6 +201,16 @@ Error debugging
 
 ---
 
+- Jaehui Boo
+    
+    Computer Engineering
+    
+    Dankook University
+    
+    Yongin, Republic of Korea
+    
+    yeppyboo@gmail.com
+
 - Hyemin Lim
     
     Dept. of Computer Science and Engineering
@@ -214,16 +231,6 @@ Error debugging
     
     kim27978965@gmail.com
     
-- Jaehui Boo
-    
-    Computer Engineering
-    
-    Dankook University
-    
-    Yongin, Republic of Korea
-    
-    yeppyboo@gmail.com
-    
 - Nayoun Kim
     
     Information Technology Convergence
@@ -234,16 +241,6 @@ Error debugging
     
     nayounkim797@gmail.com
     
-- WeiChieh Chin
-    
-    Computer and Information Technology
-    
-    Purdue University
-    
-    West Lafayette, Indiana
-    
-    victochinr900630@gmail.com
-    
 - Justin Anderson
     
     Computer and Information Technology
@@ -253,3 +250,13 @@ Error debugging
     West Lafayette, Indiana
     
     ande1013@purdue.edu
+    
+- WeiChieh Chin
+    
+    Computer and Information Technology
+    
+    Purdue University
+    
+    West Lafayette, Indiana
+    
+    victochinr900630@gmail.com
