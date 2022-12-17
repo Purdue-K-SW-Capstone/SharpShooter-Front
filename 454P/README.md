@@ -1,7 +1,12 @@
-# Analysis of LoRaWAN’s packets to demonstrate vulnerability of LoRaWAN
+# Evaluating LoRaWAN performance in intentional and unintentional DoS attacks by legacy 900MHz network devices
 ## 🧾 Project Overview
-LoRa provides benefits such as low-power and long-distance data transmission with long-lasting batteries. While investigating prior studies, security issues and vulnerabilities in LoRaWAN were found. For example, in the join procedure of LoRa, a random generator may generate the same devNonce even if there is no attack which results in Denial of Service. It has also been found that jamming, replay attack, and bit-flipping attack are possible. The goal of our project is identifying and analyzing vulnerabilities in LoRaWAN within the configured network by trying some attacks such as jamming or sniffing the packet of LoRaWAN. These attacks will be implemented in detail within the local LoRaWAN that simulates the real environment. In the future, further investigations might be conducted to solve these vulnerabilities found in this project.
+Due to the growth of AI and network technology that complement the Internet of Things(IoT), the IoT market is gradually growing and the supply of IoT devices is expanding. Compared to other network technologies used in IoT such as Wi-Fi, Bluetooth, and NB-IoT, LoRa provides benefits which are low-power and long-distance data transmission with long-lasting batteries.
 
+While investigating prior studies, security issues and vulnerabilities in LoRaWAN were found.  However, the easiest and most effective attack method is jamming. Jamming is a technology that prevents the operation of specific frequencies by disrupting radio waves. Since LoRa is based on the Chirp Spread Spectrum(CSS) and operates in the predetermined frequency band, attackers are able to exploit the chirp frequency to make LoRa more vulnerable to wideband jamming attacks.
+
+For these reasons, the goal of 454P is to evaluate the performance of LoRaWAN by conducting intentional and unintentional Denial of Service(DoS) attacks with legacy 900MHz network devices.
+
+The experiments are divided into indoor and outdoor to simulate real-world industrial sites. The experiment result demonstrates the potential risk to the security of LoRaWAN against jamming attacks.
 ## 💣 Problem Statement
 LoRaWAN networks have several vulnerabilities of security. As LoRaWAN is wireless network system using RF(Radio Frequency) to send data, it has general vulnerabilities same as other wireless networks. Thus, several security vulnerabilities like sniffing, jamming and so on exists on LoRaWAN. To be specific, LoRaWAN has two vulnerabilities that can be hacked.
 
@@ -20,12 +25,11 @@ Nonce is an arbitrary number that can be used just once in a cryptographic commu
 6. LoRa class B attack: accelerating battery exhaustion by increasing the power consumption of the sensor.
 
 ## 💡 Novelty
-This research aims to demonstrate vulnerabilities of LoRaWAN security under an experiment environment similar to the real-world specification.
+This research aims to assess the network performance of LoRaWAN according to Jamming by conducting indoor and outdoor experiments.
 
-LoRaWAN network uses multichannel radio frequency for communication, to jam LoRaWAN in the real-world specification, all of the channels should be jammed at once. As previous studies did not provide detailed information about jamming multiple channels at once or used single channels. Thus, this research fills the gap by jamming in multichannel using LoRa versions used in real-world environments with achievable equipment with details.
+The indoor experiment was conducted in a complex building to simulate the medical field where the LoRa end devices are applied. The outdoor experiment was conducted on the farm to simulate the environment in agriculture.
 
-Also, this research covers details about how to build a local network for hacking LoRaWAN. By describing the specifications about local LoRaWAN, this research provides a flexible environment where multiple hacking methods are able to be attempted with few constraints.
-
+There are several prior studies measuring the performance of LoRaWAN in urban environments or tree farms which have a lot of obstacles. However, few studies have analyzed how jamming affects the performance in real-world industrial sites. Therefore, this research consentrates in evaluating the network performance of LoRaWAN according to intentional and unintentional Denial of Service(DoS) attacks by conducting experiments.
 ## ⚙ Progress
 
 ### Building Local LoRaWAN
@@ -59,7 +63,7 @@ Also, this research covers details about how to build a local network for hackin
 <p align="center">
  <img width="700" alt="Packet Sniffing" align="center" src="https://user-images.githubusercontent.com/31115765/197548745-109bf95f-d98b-4ee1-aca6-9340af62f505.png">
  <p align="center"><b>Fig. 4. Result of packet sniffing using gnu-radio and SDR</b></p>
-</p>
+
 
 - Using GNU radio and HackRF, LoRaWAN packets which are sent by node devices were sniffed by HackRF one. Packets were shown on the laptop which was connected to HackRF.
 - When a join request of LoRaWAN is sent, packets are not encrypted. Therefore Packet sniffing of LoRaWAN is successfully conducted using gr-lora and LoRa_Craft.
@@ -76,42 +80,59 @@ Using Chirpstack v3
     - Redis 5.0.
     - Postgresql 9.5.
 
+### Arduino
+Arduino code is located in 'arduino/volumes/Arduino/ESPCounter'
+
+Dockerfile for compiling the code is located in /arduino
+
+To compile the code, run the following command in /arduino
+```bash
+docker build -t arduino .
+```
+
+To run the docker image
+```bash
+docker run -it --rm -v $PWD/volumes/Arduino:/Arduino arduino
+```
+- To stop the container, type in
+    ```bash
+    exit
+    ```
+- inside the container
+
+To compile the code, type in
+```bash
+arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose ESPCounter.ino
+```
+Inside the container, and the code in /volume/Arduino/ESPCounter will be compiled
+
+To upload the code, the device must be connected to the computer, and device should be connected with docker
+
+To connect the device with docker, for ubuntu, type in
+```bash
+docker run -it --rm -v $PWD/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 arduino
+```
+- Then, inside the container, type in
+```bash
+arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose ESPCounter.ino
+```
+- For the other OS, please refer to [this](https://docs.docker.com/engine/reference/commandline/run/#add-host-device-to-container---device) page
+
 ### Jamming Analysis
-To run the jamming analysis, [Docker](https://www.docker.com/) is required.
+Jamming analysis is located in 'jammingAnalysis'
 
-Command to start up docker container
-  ```
-  docker compose up
-  ```
+Dockerfile and docker compose file for running the code is located in /jammingAnalysis
+
+To run the docker container, run the following command in /jammingAnalysis
+```bash
+docker compose up
+```
 - Ctrl+C will stop the container
-
-To enter Jupyter Notebook, type in
-
-[localhost:10000](http://localhost:10000/lab/tree/jamming_analysis.ipynb)
-
-in your browser, or click the link.
-
-### Arduino Codes
-To compile the Arduino codes, [Docker](https://www.docker.com/) is required.
-
-At code/arduino
-
-Command to make a docker image
+- To enter Jupyter Notebook, type in
+  ```bash
+  localhost:10000
   ```
-  docker build -t arduino .
-  ```
-
-Command to run the docker image
-  ```
-  docker run -it --rm -v $PWD/volumes/Arduino:/Arduino arduino
-  ```
-- Ctrl+C will stop the container 
-To compile the codes, type in
-  ```
-  arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose ESPCounter.ino to compile the code
-  ```
-  
-Inside the container, the codes are located in /volume/Ardunio/ESPCounter
+- in your browser, or click the link [localhost:10000](http://localhost:10000/notebooks/jamming_analysis.ipynb)
 
 ## 👼 Collaborator
 
