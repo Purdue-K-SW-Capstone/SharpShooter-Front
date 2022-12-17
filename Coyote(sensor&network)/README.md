@@ -68,6 +68,9 @@ code/rec_voice_ver1.py should be run inside the Raspberry Pi.
 
 ESP 32 - Arduino IDE Settings
 
+
+<img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208263219-c8cde6ff-0f50-42f8-bc9c-b5adde799b47.jpg">
+
 - Arduino IDE version: 2.0.0 (available on Windows)
 
 - Installation guide: https://docs.heltec.org/en/node/esp32/quick_start.html#via-arduino-board-manager
