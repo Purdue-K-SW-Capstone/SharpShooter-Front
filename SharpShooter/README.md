@@ -4,8 +4,6 @@
 
 Outdoor Long Range Low Latency Shot Tracking System Using LoRa and Computer Vision
 
----
-
 ### Group Members
 
 | Name             | University                 | Department                                   | Email                 | Contact                           |
@@ -24,19 +22,13 @@ Outdoor Long Range Low Latency Shot Tracking System Using LoRa and Computer Visi
 
 Shotmarker is a program designed for a F-class shooting competition, which is conducted from 300 to 1000 yards only using prone position. This system has several complications, initially, it is overpriced. Secondly, this system depends on environmental factors such as wind and rain. The average error in an ideal state is within 2~3mm, but an error rate can be higher when the weather is not at its best for shooting. Lastly, this system is dedicated to a specific type of gun, a gun that uses supersonic bullet. In other words, if the gun does not use a supersonic bullet Shotmarker is not functional. For the gunshot detection, ShotSpotter is used to detect gunshots in cities such as New York and Chicago, however it has a low accuracy issue. In effect, around 50,000 alerts for probable gunshots has been notified with only 9.1% resulting in evidence of a gun-related offense. Also, LoRa is the fastest growing technology that researchers are interested in these days, the benefits of LoRa are long battery life, long distance communication, and low cost of the application. However, LoRa is not the best in outdoors because there are chances of having packet loss using LoRa due to various environmental factors.
 
----
-
 ## Novelty
 
 This program presents a new approach to the projectile mark detecting system. The proposed system shows high accuracy without any environmental constraints by using LoRa, Computer Vision and sound detection. Similarly to Shotmarker, this system uses LoRa networks to facilitate at a long-range. However, transmitting large data using LoRa, takes a while due to low power. Therefore, instead of transmitting an image or video, this system transmits coordinates. Also, unlike ShotSpotter, the proposed module starts only when a gun shot sound is detected; this method is also cost-effective. Therefore, the gunshot detection system that derives high accuracy is developed by this program. In this program, the proposed system applies the handshaking algorithm to ensure that transferring data is successful. Additionally, this algorithm is beneficial when LoRa network transfers large data such as images or videos.
 
----
-
 ## Project Overview
 
 <img align="center" width="800" alt="도식화" src="https://user-images.githubusercontent.com/77319785/196273713-43df42f2-068c-4285-ab9c-fec79f087b1b.png">
-
----
 
 ## Environment Settings
 
@@ -49,5 +41,3 @@ This program presents a new approach to the projectile mark detecting system. Th
 | Computer Vison  | <img src="https://img.shields.io/badge/OpenCV-purple?style=for-the-badge&logo=OpenCV&logoColor=5C3EE8"/> <img src="https://img.shields.io/badge/Python-skyblue?style=for-the-badge&logo=Python&logoColor=3776AB"/>                                                                                                                |
 | IoT             | <img src="https://img.shields.io/badge/Raspberry Pi-red?style=for-the-badge&logo=Raspberry Pi&logoColor=A22846">                                                                                                                                                                                                                  |
 | Deep Learning   | <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=Python&logoColor=3776AB"/> <img src="https://img.shields.io/badge/Pytorch-Gray?style=for-the-badge&logo=Pytorch&logoColor=EE4C2C"/>                                                                                                                   |
-
----
