@@ -144,6 +144,8 @@ The Things Stack Community Edition v3.22.1
 
 ### Localization
 
+This code is working on the premise of the fact that all of timestamp data from three sensors are received and the time difference between them are less than certain threshold described in the code. Otherwise, the code will loop and nothing will show up in the terminal until it gets the right input from the things stack.
+
 - dependencies
 
     paho-mqtt
