@@ -7,6 +7,7 @@ import json
 import base64
 import matplotlib.pyplot as plt
 
+
 pd.options.mode.chained_assignment = None
 
 
@@ -259,8 +260,8 @@ def before_jamming_result(before_jamming_dataframe=None):
         snr_list.append(df['snr'])
 
     return_dict['consumed_airtime_list'] = consumed_airtime_list
-    return_dict['rssi_list'] = rssi_list
-    return_dict['snr_list'] = snr_list
+    return_dict['rssi'] = rssi_list
+    return_dict['snr'] = snr_list
 
     return return_dict
 
@@ -329,7 +330,7 @@ def before_print_rssi(jamming_result=None, device_eui_list=None):
         device_eui_list = []
     print('Device\t Average RSSI\t\t Standard Deviation\t\t Min\t\t Max')
     for eui in device_eui_list:
-        rssi_list = [item for sublist in jamming_result[eui]['rssi_list'] for item in sublist]
+        rssi_list = [item for sublist in jamming_result[eui]['rssi'] for item in sublist]
         average_, standard_dev_, min_, max_ = basic_statistics(rssi_list)
         print(eui + '\t {:03.6f}'.format(average_), '\t\t {:.6f}'.format(standard_dev_),
               '\t\t\t\t {:03.0f}'.format(min_), '\t\t {:03.0f}'.format(max_))
@@ -341,7 +342,7 @@ def before_print_snr(jamming_result=None, device_eui_list=None):
         device_eui_list = []
     print('Device\t Average SNR\t\t Standard Deviation\t\t Min\t\t Max')
     for eui in device_eui_list:
-        snr_list = [item for sublist in jamming_result[eui]['snr_list'] for item in sublist]
+        snr_list = [item for sublist in jamming_result[eui]['snr'] for item in sublist]
         average_, standard_dev_, min_, max_ = basic_statistics(snr_list)
         print(eui + '\t {:03.6f}'.format(average_), '\t\t\t {:.6f}'.format(standard_dev_),
               '\t\t\t\t {:03.0f}'.format(min_), '\t\t {:03.0f}'.format(max_))
