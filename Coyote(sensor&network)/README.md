@@ -90,21 +90,21 @@ The code is also dockerized, check code/end_node/esp32_send_dockerized to compil
 
 To compile the code, run the following command in /esp32_send_dockerized
 
-`docker build -t esp32_send .`
+        docker build -t esp32_send .
 
 To run the docker image
 
-`docker run -it --rm -v $PWD/volumes/Arduino:/Arduino esp32_send`
+        docker run -it --rm -v $PWD/volumes/Arduino:/Arduino esp32_send
 
 - To stop the container, type in
     
-    `exit`
+        exit
     
 - inside the container
 
 To compile the code, type in
 
-`arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose esp32_send.ino`
+        arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose esp32_send.ino
 
 Inside the container, and the code in /volume/Arduino/esp32_send will be compiled
 
@@ -112,11 +112,11 @@ To upload the code, the device must be connected to the computer, and device sho
 
 To connect the device with docker, for ubuntu, type in
 
-`docker run -it --rm -v $PWD/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 esp32_send`
+        docker run -it --rm -v $PWD/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 esp32_send
 
 - Then, inside the container, type in
 
-`arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose esp32_send.ino`
+        arduino-cli upload -p /dev/ttyUSB0 --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose esp32_send.ino
 
 - For the other OS, please refer to [this](https://docs.docker.com/engine/reference/commandline/run/#add-host-device-to-container---device) page
 
