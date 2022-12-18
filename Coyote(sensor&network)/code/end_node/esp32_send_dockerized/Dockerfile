@@ -1,5 +1,8 @@
 FROM ubuntu:20.04
 
+LABEL author="Seokhyeon Bang"
+LABEL email="kzrt0123@cau.ac.kr"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update  \
