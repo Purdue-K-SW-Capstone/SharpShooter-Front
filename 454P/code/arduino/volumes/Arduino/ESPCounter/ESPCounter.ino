@@ -219,8 +219,11 @@ void do_send(osjob_t* j){
     if (LMIC.opmode & OP_TXRXPEND) {
         Serial.println(F("OP_TXRXPEND, not sending"));
     } else {
+        // Update mydata with next value
         mydata[0] = counter++;
+        // If counter is more than 100, reset it to 0
         if(counter > 100) counter = 0;
+        // Prepare upstream data transmission at the next possible time.
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         Serial.println(F("Packet queued"));
     }
