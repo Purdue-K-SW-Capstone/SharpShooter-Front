@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>motor</name>
+  <version>1.0.0</version>
+  <description>Control Overall Driving throught the motors</description>
+  <maintainer email="c.c@gmail.com">c.c</maintainer>
+  <license>Apache 2.0</license>
+
+  <depend>rclpy</depend>
+
+  <exec_depend>interfaces</exec_depend>
+  <exec_depend>obstacles_detection</exec_depend>
+  <exec_depend>motor_control</exec_depend>
+  <exec_depend>msg</exec_depend>
+  <exec_depend>obstacles_detect_node</exec_depend>
+  <exec_depend>gps_tracking</exec_depend>
+  <exec_depend>proximity</exec_depend>
+
+  <build_depend>interfaces</build_depend>
+  <build_depend>obstacles_detection</build_depend>
+  <build_depend>motor_control</build_depend>
+  <build_depend>gps_tracking</build_depend>
+  <build_depend>proximity</build_depend>
+  
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
