@@ -11,7 +11,7 @@ docker build -t arduino .
 
 To run the docker image
 ```bash
-docker run -it --rm -v $PWD/volumes/Arduino:/Arduino arduino
+docker run -it --rm -v $(PWD)/volumes/Arduino:/Arduino arduino
 ```
 - To stop the container, type in
     ```bash
@@ -29,7 +29,7 @@ To upload the code, the device must be connected to the computer, and device sho
 
 To connect the device with docker, for ubuntu, type in
 ```bash
-docker run -it --rm -v $PWD/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 arduino
+docker run -it --rm -v $(PWD)/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 arduino
 ```
 - Then, inside the container, type in
 ```bash

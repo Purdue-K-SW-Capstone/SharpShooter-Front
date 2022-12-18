@@ -105,7 +105,7 @@ To upload the code, the [ESP32](https://heltec.org/project/wifi-kit-32/) device 
 
 To connect the device with docker, for ubuntu, type in
 ```bash
-docker run -it --rm -v $PWD/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 arduino
+docker run -it --rm -v $(PWD)/volumes/Arduino:/Arduino --device=/dev/ttyUSB0 arduino
 ```
 - Then, inside the container, type in
 ```bash
@@ -127,7 +127,7 @@ docker compose up
   ```bash
   localhost:10000
   ```
-- in your browser, or click the link [localhost:10000](http://localhost:10000/notebooks/jamming_analysis.ipynb)
+  in your browser, or click the link [localhost:10000](http://localhost:10000/notebooks/jamming_analysis.ipynb)
 
 ---
 ## 👼 Collaborator
