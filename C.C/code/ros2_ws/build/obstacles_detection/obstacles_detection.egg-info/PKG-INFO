@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: obstacles-detection
+Version: 1.0.0
+Summary: For obstacles detection using LiDAR, camera, and proximity sensor
+Home-page: UNKNOWN
+Maintainer: pi
+Maintainer-email: pi@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
