@@ -92,6 +92,8 @@ ESP 32 - Arduino IDE Settings
 
 The code is also dockerized, check code/end_node/esp32_send_dockerized to compile the code in docker. .ino file is in volumes/Arduino/esp32_send. You have to change the APPKEY, DEVEUI, APPEUI for each sensor. 
 
+If you are using mac with m1 chip, this docker build will not work. Please follow steps above with Arduino IDE.
+
 To compile the code, run the following command in /esp32_send_dockerized
 
         docker build -t esp32_send .
