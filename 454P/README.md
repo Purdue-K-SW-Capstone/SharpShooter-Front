@@ -129,23 +129,28 @@ docker compose up
   ```
   in your browser, or click the link [localhost:10000](http://localhost:10000/notebooks/jamming_analysis.ipynb)
 
+To remove the container, run the following command in /jammingAnalysis
+```bash
+docker compose down
+```
+
 ---
 ## 👼 Collaborator
 
        😿 Seokhyeon Bang
-       - Chungang University
+       - Chung-Ang University
        - School of Computer Science and Engineering
        - kzrt0123@cau.ac.kr
        - https://github.com/KZRT
        
        🐤 Minju Ro
-       - Chungang University
+       - Chung-Ang University
        - School of Computer Science and Engineering
        - romj98@cau.ac.kr
        - https://github.com/ori5r2
       
        🦂 Junyoung Jang
-       - Chungang University
+       - Chung-Ang University
        - School of Computer Science and Engineering
        - junjang99@cau.ac.kr
        - https://github.com/Amuguna
