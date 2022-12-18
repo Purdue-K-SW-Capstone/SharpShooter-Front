@@ -30,6 +30,8 @@ Similar studies whose purpose is to detect animals use WiFi. However to cover la
 
 ---
 
+<img width="633" alt="2022-10-15_architecture" src="https://user-images.githubusercontent.com/48752329/208308202-53c08964-28b4-4ca9-b27b-0848a892ea90.png">
+
 ### Sensors
 - Heltec ESP32 WiFi LoRa 32 (V2)
 
