@@ -68,6 +68,9 @@ There are several prior studies measuring the performance of LoRaWAN in urban en
 - Using GNU radio and HackRF, LoRaWAN packets which are sent by node devices were sniffed by HackRF one. Packets were shown on the laptop which was connected to HackRF.
 - When a join request of LoRaWAN is sent, packets are not encrypted. Therefore Packet sniffing of LoRaWAN is successfully conducted using gr-lora and LoRa_Craft.
 
+## Conclusion
+
+
 ## 🌎 Environment
 ### LoRaWAN
 On [Raspberry Pi OS](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-09-26/)
@@ -81,6 +84,8 @@ Using Chirpstack v3
     - Postgresql 9.5.
 
 ### Arduino
+[Docker](https://www.docker.com/) is used to compile / upload the code to ESP32
+
 Arduino code is located in 'arduino/volumes/Arduino/ESPCounter'
 
 Dockerfile for compiling the code is located in /arduino
@@ -106,7 +111,7 @@ arduino-cli compile --fqbn esp32:esp32:heltec_wifi_lora_32_V2 --verbose ESPCount
 ```
 Inside the container, and the code in /volume/Arduino/ESPCounter will be compiled
 
-To upload the code, the device must be connected to the computer, and device should be connected with docker
+To upload the code, the [ESP32](https://heltec.org/project/wifi-kit-32/) device must be connected to the computer, and device should be connected with docker
 
 To connect the device with docker, for ubuntu, type in
 ```bash
