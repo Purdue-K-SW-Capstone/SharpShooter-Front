@@ -1,76 +1,66 @@
 # Evaluating LoRaWAN performance in intentional and unintentional DoS attacks by legacy 900MHz network devices
 ## 🧾 Project Overview
-Due to the growth of AI and network technology that complement the Internet of Things(IoT), the IoT market is gradually growing and the supply of IoT devices is expanding. Compared to other network technologies used in IoT such as Wi-Fi, Bluetooth, and NB-IoT, LoRa provides benefits which are low-power and long-distance data transmission with long-lasting batteries.
+Due to the growth of AI and network technology that complement the Internet of Things(IoT), the IoT market is gradually growing, and the supply of IoT devices is expanding. Compared to other network technologies used in IoT, such as Wi-Fi, Bluetooth, and NB-IoT, LoRa provides benefits which are low-power and long-distance data transmission with long-lasting batteries.
 
-While investigating prior studies, security issues and vulnerabilities in LoRaWAN were found.  However, the easiest and most effective attack method is jamming. Jamming is a technology that prevents the operation of specific frequencies by disrupting radio waves. Since LoRa is based on the Chirp Spread Spectrum(CSS) and operates in the predetermined frequency band, attackers are able to exploit the chirp frequency to make LoRa more vulnerable to wideband jamming attacks.
+While investigating prior studies, security issues and vulnerabilities in LoRaWAN were found. However, the easiest and most effective attack method is jamming. Jamming is a technology that prevents the operation of specific frequencies by disrupting radio waves. Since LoRa is based on the Chirp Spread Spectrum(CSS) and operates in the predetermined frequency band, attackers are able to exploit the chirp frequency to make LoRa more vulnerable to wideband jamming attacks.
 
 For these reasons, the goal of 454P is to evaluate the performance of LoRaWAN by conducting intentional and unintentional Denial of Service(DoS) attacks with legacy 900MHz network devices.
 
 The experiments are divided into indoor and outdoor to simulate real-world industrial sites. The experiment result demonstrates the potential risk to the security of LoRaWAN against jamming attacks.
+
+---
 ## 💣 Problem Statement
-LoRaWAN networks have several vulnerabilities of security. As LoRaWAN is wireless network system using RF(Radio Frequency) to send data, it has general vulnerabilities same as other wireless networks. Thus, several security vulnerabilities like sniffing, jamming and so on exists on LoRaWAN. To be specific, LoRaWAN has two vulnerabilities that can be hacked.
+Jamming is a fundamental problem of wireless networks that have been researched in various radio technologies. As LoRaWAN in the United States uses a predetermined US915 band, anyone including attackers is available to transmit data in this frequency band without permission. Additionally, LoRa is based on CSS, which makes LoRaWAN more vulnerable to jamming attacks. A jammer is able to sweep the same chirp frequency at the same speed, which makes data communication fail if the jammer finds the tuning slope of the chirp frequency. Even though narrowband jamming can be prevented since the jammer affects the chirp receiver for a short period, it is still vulnerable to wideband jamming.
 
-1. The join request is not encrypted.
-When end-nodes want to join the server, end-nodes send a join request to gateway to make authentication of this device. In LoRaWAN, join request is not encrypted. Since, it can be hacked by the other listening device like HackRF.
-2. The Nonce is fixed.
-Nonce is an arbitrary number that can be used just once in a cryptographic communication. In LoRa, this nonce number is fixed after it is set at first time.
+This weakness results in human and property damage since several data in high-risk industries transmitted over LoRaWAN are susceptible to information loss. For example, LoRaWAN applied in the medical area needs to monitor patients continuously who require real-time and always-on systems that are dangerous if packet loss occurs. In addition, agricultural production will suffer if farmers receive inaccurate soil and water data information.
 
- Since of these vulnerabilities of security, there are six methods to hack LoRaWAN that are generally known.
-
-1. Jamming: making a big noise to interfere sending the data.
-2. Replay Attack: repeating the transmission of valid data by intercepting and retransmitting data, resulting in Denial of Service(DoS) attack.
-3. ACK spoofing: exploiting the fact that it does not specify which message is confirmed
-4. Eavesdropping: repeating reset, attacker can get plaintext
-5. Bit-Fipping: changing the context of the packet
-6. LoRa class B attack: accelerating battery exhaustion by increasing the power consumption of the sensor.
-
+---
 ## 💡 Novelty
-This research aims to assess the network performance of LoRaWAN according to Jamming by conducting indoor and outdoor experiments.
+This research aims to assess the network performance of LoRaWAN according to jamming by conducting indoor and outdoor experiments.
 
 The indoor experiment was conducted in a complex building to simulate the medical field where the LoRa end devices are applied. The outdoor experiment was conducted on the farm to simulate the environment in agriculture.
 
-There are several prior studies measuring the performance of LoRaWAN in urban environments or tree farms which have a lot of obstacles. However, few studies have analyzed how jamming affects the performance in real-world industrial sites. Therefore, this research consentrates in evaluating the network performance of LoRaWAN according to intentional and unintentional Denial of Service(DoS) attacks by conducting experiments.
-## ⚙ Progress
+There are several prior studies measuring the performance of LoRaWAN in urban environments or tree farms which have a lot of obstacles. However, few studies have analyzed how jamming affects performance in real-world industrial sites. Therefore, this research concentrates on evaluating the network performance of LoRaWAN according to intentional and unintentional Denial of Service(DoS) attacks by conducting experiments.
 
-### Building Local LoRaWAN
-<p align="center">
- <img width="700" alt="LocalLoRaWAN" align="center" src="https://user-images.githubusercontent.com/31115765/197547495-1a1319bb-7026-472f-a643-208f0badc29b.png">
- <p align="center"><b>Fig. 1. Set up of local LoRaWAN</b></p>
+---
+## ⚙ Method
 
-- The whole network consists of gateway, gateway bridge, network server, application server, and two Database servers.
-- Using Raspberry Pi as a network server and an application server. RAK7249 as a gateway
-- Local LoRaWAN was a mandatory because this project aims to hack a LoRaWAN, which might cause legal problems, which might cause a problem once hacking is operated in Layer 2 or higher layers.
+Two experiments are designed to prove the vulnerability of LoRaWAN applied in the industries to jamming attacks, whether intentional or unintentional. The definition of intentional and unintentional attacks is defined for experiments. Intentional attack is defined as one pair of jammers sending a signal toward the gateway next to each other. Unintentional attack is defined as one pair of jammers sending a signal to each other without a purpose that affects the gateway.
 
-### Jamming
+### Indoor Experiment
 
-#### Jamming using SDR
-<p align="center">
- <img width="500" alt="SDR" src="https://user-images.githubusercontent.com/31115765/197550817-6f1a3aad-2a3a-4c2f-9a3a-db97c081b983.jpg">
- <p align="center"><b>Fig. 2. Result of jamming using SDR on spectrum analyzer</b></p>
+The indoor experiment aims to prove the possibility of damage in medical facilities induced by the jamming attack. The indoor experiment was conducted by dividing whether the end nodes were placed on the same floor and whether the attack was intentional.
 
-- Jamming was conducted by Software Defined Radio(SDR). HackRF one and USRP B200 were used as SDR.
-- dBm of SDR was not as much powerful as signals sent by a node device. It can not conduct jamming successfully.
+### Outdoor Experiment
 
-#### Jamming using Motorola canopy
-<p align="center">
- <img width="500" alt="SDRCanopy" src="https://user-images.githubusercontent.com/31115765/197655841-e0d912dd-2b56-41a1-9edb-6a2f6b1bf317.jpg">
- <p align="center"><b>Fig. 3. Result of jamming using motorola canopy on spectrum analyzer</b></p>
-- Canopy has two types which are Access Point(AP) and subscriber. It can be connected with external antennas. Subscriber sent tremendous packets to AP.
-- The analyzer proved that there was a noise like a waterfall which can offset all signals near 900MHz.
-- Additionally, all join requests from node devices in range of 902.8 to 914Hz could not reach to the gateway as a join request did not show up on Chirpstack interface of the application server and network server. This points to Jamming comes to fruition. Since commercial LoRaWAN has more channels, jamming more channels can be done by using more canopy at once, or jamming different frequency of LoRaWAN in multiple region using under type of canopy.
+The outdoor experiment aims to demonstrate whether a LoRaWAN gateway for outdoor IoT commercial deployment is interrupted by unintentional jamming attacks.
 
-### Packet Sniffing
-<p align="center">
- <img width="700" alt="Packet Sniffing" align="center" src="https://user-images.githubusercontent.com/31115765/197548745-109bf95f-d98b-4ee1-aca6-9340af62f505.png">
- <p align="center"><b>Fig. 4. Result of packet sniffing using gnu-radio and SDR</b></p>
+---
+## Implementation
 
+### Indoor Experiment
 
-- Using GNU radio and HackRF, LoRaWAN packets which are sent by node devices were sniffed by HackRF one. Packets were shown on the laptop which was connected to HackRF.
-- When a join request of LoRaWAN is sent, packets are not encrypted. Therefore Packet sniffing of LoRaWAN is successfully conducted using gr-lora and LoRa_Craft.
+The indoor experiment is divided into Close-in attack, Intentional attack, and Unintentional attack. Close-in attack showed perfect performance that any single packet was not received. Intentional attack proved that the far from a jammer to a gateway, the bigger JE happens. If end nodes were placed on different floors, JE was bigger than the experiment with the same floor. During unintentional attack, jamming was successfully conducted. This means that jamming is more effective if the distance between jammers is far enough.
 
+### Outdoor Experiment
+
+The outdoor experiment was conducted on the farm. End nodes were fixed at 100m, 200m, and 500m from the gateway. Jammers were located on 10m, 50m, and 100m from the gateway. The experiment checked Jamming Effect (JE) using the average Packet Delivery Rate (PDR). Jamming was more effective than indoor experiments because there were no obstacles. Therefore, jamming in outdoor environment, on the farm, was effective.
+
+---
 ## Conclusion
+This research aims to evaluate the performance of LoRaWAN against jamming attacks and to inform the security vulnerability in the physical layer of LoRaWAN, with both intentional and unintentional attacks.
 
+These experiments verify the existence of jamming threats by legacy 900MHz network devices, even in unintended situations.
 
+These experiments were conducted on indoor and outdoor environments that reflect the real environment of the medical and agricultural industries, like hospitals and farms that employ LoRaWAN.
+
+In addition, the metrics are suggested for more accurate performance evaluation, which indicates the effect of jamming under wireless networks that diverge packets through RF signals without a destination.
+
+Experiment results show high JE, which suggests that the security vulnerability of LoRaWAN needs to be reconsidered.
+
+Therefore, this research demonstrates the security vulnerability in LoRaWAN on the physical layer and the countermeasures that should arise for the LoRaWAN.
+
+---
 ## 🌎 Environment
 ### LoRaWAN
 On [Raspberry Pi OS](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-09-26/)
@@ -139,6 +129,7 @@ docker compose up
   ```
 - in your browser, or click the link [localhost:10000](http://localhost:10000/notebooks/jamming_analysis.ipynb)
 
+---
 ## 👼 Collaborator
 
        😿 Seokhyeon Bang
