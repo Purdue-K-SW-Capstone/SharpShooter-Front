@@ -36,7 +36,7 @@ The indoor experiment aims to prove the possibility of damage in medical facilit
 The outdoor experiment aims to demonstrate whether a LoRaWAN gateway for outdoor IoT commercial deployment is interrupted by unintentional jamming attacks.
 
 ---
-## Implementation
+## ⚒️ Implementation
 
 ### Indoor Experiment
 
@@ -47,7 +47,7 @@ The indoor experiment is divided into Close-in attack, Intentional attack, and U
 The outdoor experiment was conducted on the farm. End nodes were fixed at 100m, 200m, and 500m from the gateway. Jammers were located on 10m, 50m, and 100m from the gateway. The experiment checked Jamming Effect (JE) using the average Packet Delivery Rate (PDR). Jamming was more effective than indoor experiments because there were no obstacles. Therefore, jamming in outdoor environment, on the farm, was effective.
 
 ---
-## Conclusion
+## 📜 Conclusion
 This research aims to evaluate the performance of LoRaWAN against jamming attacks and to inform the security vulnerability in the physical layer of LoRaWAN, with both intentional and unintentional attacks.
 
 These experiments verify the existence of jamming threats by legacy 900MHz network devices, even in unintended situations.
